@@ -1,11 +1,11 @@
 {
-  "recorded_at_utc": "2026-10-27T20:13:50.945047+00:00",
+  "recorded_at_utc": "2026-10-27T20:22:06.598597+00:00",
   "document": "docs/Test_Plan_SQA.docx",
-  "docx_sha256": "2045559ef6dc7808a9852e81a1cbcdae7f0407a67b2dd51a5d28b28c481a6b23",
-  "pages": 6,
+  "docx_sha256": "cd66197221f92975fd8f986bfbefc843e06120260d385666427deb75d3650acb",
+  "pages": 15,
   "renderer": "Microsoft Word ExportAsFixedFormat y Poppler",
   "all_pages_visually_reviewed": true,
-  "review_result": "Versión sencilla de seis páginas, ocho apartados, sin anexos ni etiquetas de figuras; tres capturas reales incrustadas junto a la explicación. Texto e imágenes legibles.",
+  "review_result": "Quince páginas con formato sencillo y contenido ampliado; ocho apartados, ocho casos desarrollados, organización Kanban, métricas, correcciones y riesgos. Sin anexos ni figuras numeradas.",
   "embedded_screenshots": 3,
   "embedded_images_match_original_png_bytes": true
 }
