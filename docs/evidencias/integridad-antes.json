@@ -1,0 +1,11 @@
+{
+  "recorded_at_utc": "2026-10-27T19:42:24.885039+00:00",
+  "env_sha256": "ecc7f33acdeef90a051e546c027f4fe4d6060ee8ac584ffde4468137cb44505d",
+  "database_logical_sha256": "f23cf30c729e8a8ffde29fc2868e7a4ac9d08025446b635cb568c3fefcdf9403",
+  "counts": {
+    "users": 1,
+    "products": 12,
+    "movements": 24,
+    "categories": 5
+  }
+}

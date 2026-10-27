@@ -1,0 +1,361 @@
+[Tue Oct 27 15:46:54 2026] PHP 8.3.33 Development Server (http://127.0.0.1:54917) started
+[Tue Oct 27 15:46:54 2026] 127.0.0.1:54919 Accepted
+[Tue Oct 27 19:46:54 2026] 127.0.0.1:54919 [GET] URI: /login
+[Tue Oct 27 15:46:55 2026] 127.0.0.1:54919 Closing
+[Tue Oct 27 15:46:59 2026] 127.0.0.1:54923 Accepted
+[Tue Oct 27 15:46:59 2026] 127.0.0.1:54923 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Oct 27 15:46:59 2026] 127.0.0.1:54923 Closing
+[Tue Oct 27 15:47:04 2026] 127.0.0.1:55056 Accepted
+[Tue Oct 27 19:47:04 2026] 127.0.0.1:55056 [GET] URI: /login
+[Tue Oct 27 15:47:05 2026] 127.0.0.1:55056 Closing
+[Tue Oct 27 15:47:05 2026] 127.0.0.1:55057 Accepted
+[Tue Oct 27 15:47:05 2026] 127.0.0.1:55057 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:05 2026] 127.0.0.1:55058 Accepted
+[Tue Oct 27 15:47:05 2026] 127.0.0.1:55057 Closing
+[Tue Oct 27 15:47:05 2026] 127.0.0.1:55058 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:05 2026] 127.0.0.1:55058 Closing
+[Tue Oct 27 15:47:05 2026] 127.0.0.1:55059 Accepted
+[Tue Oct 27 15:47:05 2026] 127.0.0.1:55059 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:05 2026] 127.0.0.1:55059 Closing
+[Tue Oct 27 15:47:05 2026] 127.0.0.1:55060 Accepted
+[Tue Oct 27 19:47:05 2026] 127.0.0.1:55060 [POST] URI: /login
+[Tue Oct 27 15:47:05 2026] 127.0.0.1:55060 Closing
+[Tue Oct 27 15:47:05 2026] 127.0.0.1:55061 Accepted
+[Tue Oct 27 19:47:05 2026] 127.0.0.1:55061 [GET] URI: /dashboard
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55061 Closing
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55062 Accepted
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55062 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55063 Accepted
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55063 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55062 Closing
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55063 Closing
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55064 Accepted
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55064 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55064 Closing
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55065 Accepted
+[Tue Oct 27 19:47:06 2026] 127.0.0.1:55065 [GET] URI: /products/create
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55065 Closing
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55066 Accepted
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55066 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55067 Accepted
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55067 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55066 Closing
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55067 Closing
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55068 Accepted
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55068 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:06 2026] 127.0.0.1:55068 Closing
+[Tue Oct 27 15:47:07 2026] 127.0.0.1:55069 Accepted
+[Tue Oct 27 19:47:07 2026] 127.0.0.1:55069 [POST] URI: /products
+[Tue Oct 27 15:47:07 2026] 127.0.0.1:55069 Closing
+[Tue Oct 27 15:47:07 2026] 127.0.0.1:55072 Accepted
+[Tue Oct 27 19:47:07 2026] 127.0.0.1:55072 [GET] URI: /products
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55072 Closing
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55073 Accepted
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55073 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55074 Accepted
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55074 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55073 Closing
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55074 Closing
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55075 Accepted
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55075 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55075 Closing
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55076 Accepted
+[Tue Oct 27 19:47:08 2026] 127.0.0.1:55076 [GET] URI: /products
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55076 Closing
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55077 Accepted
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55078 Accepted
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55077 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55078 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55077 Closing
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55078 Closing
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55079 Accepted
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55079 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55079 Closing
+[Tue Oct 27 15:47:08 2026] 127.0.0.1:55080 Accepted
+[Tue Oct 27 19:47:08 2026] 127.0.0.1:55080 [GET] URI: /products/create
+[Tue Oct 27 15:47:09 2026] 127.0.0.1:55080 Closing
+[Tue Oct 27 15:47:09 2026] 127.0.0.1:55081 Accepted
+[Tue Oct 27 15:47:09 2026] 127.0.0.1:55081 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:09 2026] 127.0.0.1:55082 Accepted
+[Tue Oct 27 15:47:09 2026] 127.0.0.1:55082 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:09 2026] 127.0.0.1:55081 Closing
+[Tue Oct 27 15:47:09 2026] 127.0.0.1:55082 Closing
+[Tue Oct 27 15:47:09 2026] 127.0.0.1:55083 Accepted
+[Tue Oct 27 15:47:09 2026] 127.0.0.1:55083 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:09 2026] 127.0.0.1:55083 Closing
+[Tue Oct 27 15:47:09 2026] 127.0.0.1:55084 Accepted
+[Tue Oct 27 19:47:09 2026] 127.0.0.1:55084 [POST] URI: /products
+[Tue Oct 27 15:47:10 2026] 127.0.0.1:55084 Closing
+[Tue Oct 27 15:47:10 2026] 127.0.0.1:55085 Accepted
+[Tue Oct 27 19:47:10 2026] 127.0.0.1:55085 [GET] URI: /products/create
+[Tue Oct 27 15:47:10 2026] 127.0.0.1:55085 Closing
+[Tue Oct 27 15:47:10 2026] 127.0.0.1:55086 Accepted
+[Tue Oct 27 15:47:10 2026] 127.0.0.1:55086 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:10 2026] 127.0.0.1:55087 Accepted
+[Tue Oct 27 15:47:10 2026] 127.0.0.1:55087 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:10 2026] 127.0.0.1:55086 Closing
+[Tue Oct 27 15:47:10 2026] 127.0.0.1:55087 Closing
+[Tue Oct 27 15:47:10 2026] 127.0.0.1:55088 Accepted
+[Tue Oct 27 15:47:10 2026] 127.0.0.1:55088 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:10 2026] 127.0.0.1:55088 Closing
+[Tue Oct 27 15:47:10 2026] 127.0.0.1:55089 Accepted
+[Tue Oct 27 19:47:10 2026] 127.0.0.1:55089 [GET] URI: /products
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55089 Closing
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55090 Accepted
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55090 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55091 Accepted
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55091 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55090 Closing
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55091 Closing
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55092 Accepted
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55092 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55092 Closing
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55093 Accepted
+[Tue Oct 27 19:47:11 2026] 127.0.0.1:55093 [GET] URI: /login
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55093 Closing
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55094 Accepted
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55094 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55095 Accepted
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55094 Closing
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55095 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55095 Closing
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55096 Accepted
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55096 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:11 2026] 127.0.0.1:55096 Closing
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55097 Accepted
+[Tue Oct 27 19:47:12 2026] 127.0.0.1:55097 [POST] URI: /login
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55097 Closing
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55098 Accepted
+[Tue Oct 27 19:47:12 2026] 127.0.0.1:55098 [GET] URI: /dashboard
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55098 Closing
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55099 Accepted
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55099 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55100 Accepted
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55100 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55099 Closing
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55100 Closing
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55101 Accepted
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55101 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55101 Closing
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55102 Accepted
+[Tue Oct 27 19:47:12 2026] 127.0.0.1:55102 [GET] URI: /products/create
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55102 Closing
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55103 Accepted
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55103 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55104 Accepted
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55104 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55103 Closing
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55104 Closing
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55105 Accepted
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55105 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:12 2026] 127.0.0.1:55105 Closing
+[Tue Oct 27 15:47:13 2026] 127.0.0.1:55106 Accepted
+[Tue Oct 27 19:47:13 2026] 127.0.0.1:55106 [POST] URI: /products
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55106 Closing
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55107 Accepted
+[Tue Oct 27 19:47:14 2026] 127.0.0.1:55107 [GET] URI: /products
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55107 Closing
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55108 Accepted
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55108 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55109 Accepted
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55109 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55108 Closing
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55109 Closing
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55110 Accepted
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55110 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55110 Closing
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55111 Accepted
+[Tue Oct 27 19:47:14 2026] 127.0.0.1:55111 [GET] URI: /products
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55111 Closing
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55112 Accepted
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55112 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55113 Accepted
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55113 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55112 Closing
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55113 Closing
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55114 Accepted
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55114 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55114 Closing
+[Tue Oct 27 15:47:14 2026] 127.0.0.1:55115 Accepted
+[Tue Oct 27 19:47:14 2026] 127.0.0.1:55115 [GET] URI: /movements/create
+[Tue Oct 27 15:47:15 2026] 127.0.0.1:55115 Closing
+[Tue Oct 27 15:47:15 2026] 127.0.0.1:55116 Accepted
+[Tue Oct 27 15:47:15 2026] 127.0.0.1:55116 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:15 2026] 127.0.0.1:55117 Accepted
+[Tue Oct 27 15:47:15 2026] 127.0.0.1:55117 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:15 2026] 127.0.0.1:55116 Closing
+[Tue Oct 27 15:47:15 2026] 127.0.0.1:55117 Closing
+[Tue Oct 27 15:47:15 2026] 127.0.0.1:55118 Accepted
+[Tue Oct 27 15:47:15 2026] 127.0.0.1:55118 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:15 2026] 127.0.0.1:55118 Closing
+[Tue Oct 27 15:47:15 2026] 127.0.0.1:55119 Accepted
+[Tue Oct 27 19:47:15 2026] 127.0.0.1:55119 [POST] URI: /movements
+[Tue Oct 27 15:47:16 2026] 127.0.0.1:55119 Closing
+[Tue Oct 27 15:47:16 2026] 127.0.0.1:55120 Accepted
+[Tue Oct 27 19:47:16 2026] 127.0.0.1:55120 [GET] URI: /movements/create
+[Tue Oct 27 15:47:16 2026] 127.0.0.1:55120 Closing
+[Tue Oct 27 15:47:16 2026] 127.0.0.1:55121 Accepted
+[Tue Oct 27 15:47:16 2026] 127.0.0.1:55122 Accepted
+[Tue Oct 27 15:47:16 2026] 127.0.0.1:55121 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:16 2026] 127.0.0.1:55122 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:16 2026] 127.0.0.1:55121 Closing
+[Tue Oct 27 15:47:16 2026] 127.0.0.1:55122 Closing
+[Tue Oct 27 15:47:16 2026] 127.0.0.1:55123 Accepted
+[Tue Oct 27 15:47:16 2026] 127.0.0.1:55123 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:16 2026] 127.0.0.1:55123 Closing
+[Tue Oct 27 15:47:16 2026] 127.0.0.1:55124 Accepted
+[Tue Oct 27 19:47:16 2026] 127.0.0.1:55124 [GET] URI: /movements
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55124 Closing
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55125 Accepted
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55126 Accepted
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55125 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55126 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55125 Closing
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55126 Closing
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55127 Accepted
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55127 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55127 Closing
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55128 Accepted
+[Tue Oct 27 19:47:17 2026] 127.0.0.1:55128 [GET] URI: /products
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55128 Closing
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55130 Accepted
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55130 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55131 Accepted
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55131 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55130 Closing
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55131 Closing
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55133 Accepted
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55133 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55133 Closing
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55134 Accepted
+[Tue Oct 27 19:47:17 2026] 127.0.0.1:55134 [GET] URI: /login
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55134 Closing
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55135 Accepted
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55135 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55136 Accepted
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55135 Closing
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55136 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55136 Closing
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55137 Accepted
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55137 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:17 2026] 127.0.0.1:55137 Closing
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55138 Accepted
+[Tue Oct 27 19:47:18 2026] 127.0.0.1:55138 [POST] URI: /login
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55138 Closing
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55139 Accepted
+[Tue Oct 27 19:47:18 2026] 127.0.0.1:55139 [GET] URI: /dashboard
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55139 Closing
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55140 Accepted
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55140 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55141 Accepted
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55141 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55140 Closing
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55141 Closing
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55142 Accepted
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55142 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55142 Closing
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55143 Accepted
+[Tue Oct 27 19:47:18 2026] 127.0.0.1:55143 [GET] URI: /products/create
+[Tue Oct 27 15:47:18 2026] 127.0.0.1:55143 Closing
+[Tue Oct 27 15:47:19 2026] 127.0.0.1:55144 Accepted
+[Tue Oct 27 15:47:19 2026] 127.0.0.1:55144 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:19 2026] 127.0.0.1:55145 Accepted
+[Tue Oct 27 15:47:19 2026] 127.0.0.1:55145 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:19 2026] 127.0.0.1:55144 Closing
+[Tue Oct 27 15:47:19 2026] 127.0.0.1:55145 Closing
+[Tue Oct 27 15:47:19 2026] 127.0.0.1:55146 Accepted
+[Tue Oct 27 15:47:19 2026] 127.0.0.1:55146 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:19 2026] 127.0.0.1:55146 Closing
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55147 Accepted
+[Tue Oct 27 19:47:20 2026] 127.0.0.1:55147 [POST] URI: /products
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55147 Closing
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55148 Accepted
+[Tue Oct 27 19:47:20 2026] 127.0.0.1:55148 [GET] URI: /products
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55148 Closing
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55149 Accepted
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55149 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55150 Accepted
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55150 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55149 Closing
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55150 Closing
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55151 Accepted
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55151 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55151 Closing
+[Tue Oct 27 15:47:20 2026] 127.0.0.1:55152 Accepted
+[Tue Oct 27 19:47:20 2026] 127.0.0.1:55152 [GET] URI: /products
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55152 Closing
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55153 Accepted
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55153 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55154 Accepted
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55154 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55153 Closing
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55154 Closing
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55155 Accepted
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55155 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55155 Closing
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55156 Accepted
+[Tue Oct 27 19:47:21 2026] 127.0.0.1:55156 [GET] URI: /movements/create
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55156 Closing
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55157 Accepted
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55158 Accepted
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55157 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55158 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55157 Closing
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55158 Closing
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55159 Accepted
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55159 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55159 Closing
+[Tue Oct 27 15:47:21 2026] 127.0.0.1:55160 Accepted
+[Tue Oct 27 19:47:21 2026] 127.0.0.1:55160 [POST] URI: /movements
+[Tue Oct 27 15:47:22 2026] 127.0.0.1:55160 Closing
+[Tue Oct 27 15:47:22 2026] 127.0.0.1:55161 Accepted
+[Tue Oct 27 19:47:22 2026] 127.0.0.1:55161 [GET] URI: /movements
+[Tue Oct 27 15:47:22 2026] 127.0.0.1:55161 Closing
+[Tue Oct 27 15:47:22 2026] 127.0.0.1:55162 Accepted
+[Tue Oct 27 15:47:22 2026] 127.0.0.1:55162 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:22 2026] 127.0.0.1:55163 Accepted
+[Tue Oct 27 15:47:22 2026] 127.0.0.1:55163 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:22 2026] 127.0.0.1:55162 Closing
+[Tue Oct 27 15:47:22 2026] 127.0.0.1:55163 Closing
+[Tue Oct 27 15:47:22 2026] 127.0.0.1:55164 Accepted
+[Tue Oct 27 15:47:22 2026] 127.0.0.1:55164 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:22 2026] 127.0.0.1:55164 Closing
+[Tue Oct 27 15:47:22 2026] 127.0.0.1:55165 Accepted
+[Tue Oct 27 19:47:22 2026] 127.0.0.1:55165 [GET] URI: /movements/create
+[Tue Oct 27 15:47:23 2026] 127.0.0.1:55165 Closing
+[Tue Oct 27 15:47:23 2026] 127.0.0.1:55166 Accepted
+[Tue Oct 27 15:47:23 2026] 127.0.0.1:55166 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:23 2026] 127.0.0.1:55167 Accepted
+[Tue Oct 27 15:47:23 2026] 127.0.0.1:55167 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:23 2026] 127.0.0.1:55166 Closing
+[Tue Oct 27 15:47:23 2026] 127.0.0.1:55167 Closing
+[Tue Oct 27 15:47:23 2026] 127.0.0.1:55169 Accepted
+[Tue Oct 27 15:47:23 2026] 127.0.0.1:55169 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:23 2026] 127.0.0.1:55169 Closing
+[Tue Oct 27 15:47:23 2026] 127.0.0.1:55170 Accepted
+[Tue Oct 27 19:47:23 2026] 127.0.0.1:55170 [POST] URI: /movements
+[Tue Oct 27 15:47:23 2026] 127.0.0.1:55170 Closing
+[Tue Oct 27 15:47:23 2026] 127.0.0.1:55171 Accepted
+[Tue Oct 27 19:47:23 2026] 127.0.0.1:55171 [GET] URI: /movements
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55171 Closing
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55172 Accepted
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55172 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55173 Accepted
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55173 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55172 Closing
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55173 Closing
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55174 Accepted
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55174 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55174 Closing
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55175 Accepted
+[Tue Oct 27 19:47:24 2026] 127.0.0.1:55175 [GET] URI: /stock-bajo
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55175 Closing
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55176 Accepted
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55176 [200]: GET /build/assets/app-Cs87dlAS.css
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55177 Accepted
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55177 [200]: GET /build/assets/app-CwvaRjCi.js
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55176 Closing
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55177 Closing
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55178 Accepted
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55178 [200]: GET /build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2
+[Tue Oct 27 15:47:24 2026] 127.0.0.1:55178 Closing

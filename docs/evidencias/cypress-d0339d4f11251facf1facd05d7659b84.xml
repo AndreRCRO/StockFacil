@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="31.333" tests="3" failures="1">
+  <testsuite name="Root Suite" timestamp="2026-10-27T19:45:57" tests="0" file="cypress\e2e\inventario.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Aceptación de inventario StockFácil" timestamp="2026-10-27T19:45:57" tests="3" time="31.329" failures="1">
+    <testcase name="Aceptación de inventario StockFácil CP-03 y CP-04 crea producto con stock y rechaza SKU duplicado" time="0.000" classname="CP-03 y CP-04 crea producto con stock y rechaza SKU duplicado">
+      <failure message="Timed out retrying after 4000ms: Expected to find content: &apos;CY-ALTA&apos; within the selector: &apos;tr&apos; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find content: 'CY-ALTA' within the selector: 'tr' but never did.
+    at Context.eval (webpack:///./cypress/e2e/inventario.cy.js:25:37)]]></failure>
+    </testcase>
+    <testcase name="Aceptación de inventario StockFácil CP-06 rechaza salida superior al saldo y conserva stock e historial" time="7.872" classname="CP-06 rechaza salida superior al saldo y conserva stock e historial">
+    </testcase>
+    <testcase name="Aceptación de inventario StockFácil CP-05 registra entrada y CP-07 salida al mínimo con alerta e historial" time="7.776" classname="CP-05 registra entrada y CP-07 salida al mínimo con alerta e historial">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,99 @@
+npm notice run test:cypress
+npm notice run node scripts/run-browser-tests.mjs cypress
+
+   INFO  Preparing database.  
+
+  Creating migration table ............................................................................. 240.82ms DONE
+
+   INFO  Running migrations.  
+
+  0001_01_01_000000_create_users_table ................................................................. 113.78ms DONE
+  0001_01_01_000001_create_cache_table ................................................................... 0.79ms DONE
+  0001_01_01_000002_create_jobs_table ................................................................... 33.50ms DONE
+  2026_10_13_000001_create_inventory_tables ............................................................. 71.71ms DONE
+
+
+   INFO  Seeding database.  
+
+  Database\Seeders\DemoInventorySeeder ....................................................................... RUNNING  
+  Database\Seeders\DemoInventorySeeder ................................................................... 290 ms DONE  
+
+
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        16.2.0                                                                         │
+  │ Browser:        Electron 146 (headless) (deprecated)                                           │
+  │ Node Version:   v24.15.0 (C:\Program Files\nodejs\node.exe)                                    │
+  │ Specs:          1 found (inventario.cy.js)                                                     │
+  │ Searched:       cypress/e2e/**/*.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+Warning: The Electron browser is deprecated as a test browser and will be removed in a future version of Cypress.
+
+Switch to Chrome or another installed browser to avoid a breaking change when you upgrade.
+
+Read more about supported browsers: https://on.cypress.io/launching-browsers
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  inventario.cy.js                                                                (1 of 1)
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="31.333" tests="3" failures="1">
+  <testsuite name="Root Suite" timestamp="2026-10-27T19:45:57" tests="0" file="cypress\e2e\inventario.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Aceptación de inventario StockFácil" timestamp="2026-10-27T19:45:57" tests="3" time="31.329" failures="1">
+    <testcase name="Aceptación de inventario StockFácil CP-03 y CP-04 crea producto con stock y rechaza SKU duplicado" time="0.000" classname="CP-03 y CP-04 crea producto con stock y rechaza SKU duplicado">
+      <failure message="Timed out retrying after 4000ms: Expected to find content: &apos;CY-ALTA&apos; within the selector: &apos;tr&apos; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find content: 'CY-ALTA' within the selector: 'tr' but never did.
+    at Context.eval (webpack:///./cypress/e2e/inventario.cy.js:25:37)]]></failure>
+    </testcase>
+    <testcase name="Aceptación de inventario StockFácil CP-06 rechaza salida superior al saldo y conserva stock e historial" time="7.872" classname="CP-06 rechaza salida superior al saldo y conserva stock e historial">
+    </testcase>
+    <testcase name="Aceptación de inventario StockFácil CP-05 registra entrada y CP-07 salida al mínimo con alerta e historial" time="7.776" classname="CP-05 registra entrada y CP-07 salida al mínimo con alerta e historial">
+    </testcase>
+  </testsuite>
+</testsuites>
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        3                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  4                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     31 seconds                                                                       │
+  │ Spec Ran:     inventario.cy.js                                                                 │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Univalle\SQA\StockFácil\docs\evidencias\cypress\inventario.cy.js\Aceptación d     (1280x720)
+     e inventario StockFácil -- CP-03 y CP-04 crea producto con stock y rechaza SKU d               
+     uplicado (failed).png                                                                          
+  -  C:\Univalle\SQA\StockFácil\docs\evidencias\cypress\inventario.cy.js\CP-06-stock-    (1280x1105)
+     insuficiente.png                                                                               
+  -  C:\Univalle\SQA\StockFácil\docs\evidencias\cypress\inventario.cy.js\CP-05-entrad    (1280x1361)
+     a.png                                                                                          
+  -  C:\Univalle\SQA\StockFácil\docs\evidencias\cypress\inventario.cy.js\CP-07-alerta     (1280x949)
+     -minimo.png                                                                                    
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ×  inventario.cy.js                         00:31        3        2        1        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ×  1 of 1 failed (100%)                     00:31        3        2        1        -        -  
+

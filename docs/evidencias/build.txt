@@ -1,0 +1,17 @@
+npm notice run build
+npm notice run vite build
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 2 modules transformed.
+rendering chunks...
+computing gzip size...
+public/build/manifest.json                                            1.88 kB │ gzip: 0.36 kB
+public/build/assets/manrope-cyrillic-ext-wght-normal-C8S-KRRz.woff2   2.55 kB
+public/build/assets/manrope-vietnamese-wght-normal-usUDDRr7.woff2     8.52 kB
+public/build/assets/manrope-greek-wght-normal-DL7QRZyv.woff2          9.44 kB
+public/build/assets/manrope-cyrillic-wght-normal-Dvxsihut.woff2      14.50 kB
+public/build/assets/manrope-latin-ext-wght-normal-Ch3YOpNY.woff2     15.12 kB
+public/build/assets/manrope-latin-wght-normal-DHIcAJRg.woff2         24.84 kB
+public/build/assets/app-Cs87dlAS.css                                 31.48 kB │ gzip: 7.96 kB
+public/build/assets/app-CwvaRjCi.js                                   2.39 kB │ gzip: 1.02 kB
+✓ built in 3.98s
