@@ -1,5 +1,4 @@
-"""Exporta Test Plan y anexos actuales a Word; requiere python-docx."""
-import csv
+"""Exporta el plan sencillo y sus capturas reales al mismo archivo Word."""
 import re
 from pathlib import Path
 from docx import Document
@@ -8,6 +7,8 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
+from docx.opc.constants import RELATIONSHIP_TYPE as RT
+from PIL import Image
 
 root = Path(__file__).resolve().parents[1]
 docs = root / 'docs'
@@ -21,10 +22,10 @@ for style in ['Normal', 'Title', 'Subtitle', 'Heading 1', 'Heading 2', 'Heading 
     document.styles[style].font.color.rgb = RGBColor(0, 0, 0)
     for border in document.styles[style].element.xpath('./w:pPr/w:pBdr'):
         border.getparent().remove(border)
-document.styles['Normal'].font.size = Pt(10.5)
-document.styles['Normal'].paragraph_format.space_after = Pt(6)
-document.styles['Normal'].paragraph_format.line_spacing = 1.12
-document.styles['Title'].font.size = Pt(28)
+document.styles['Normal'].font.size = Pt(11)
+document.styles['Normal'].paragraph_format.space_after = Pt(7)
+document.styles['Normal'].paragraph_format.line_spacing = 1.1
+document.styles['Title'].font.size = Pt(25)
 for style, size in [('Heading 1', 16), ('Heading 2', 12.5), ('Heading 3', 11)]:
     document.styles[style].font.size = Pt(size)
     document.styles[style].font.bold = True
@@ -33,15 +34,54 @@ for style, size in [('Heading 1', 16), ('Heading 2', 12.5), ('Heading 3', 11)]:
     document.styles[style].paragraph_format.keep_with_next = True
 
 def inline(paragraph, text):
-    text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'\1 (\2)', text)
-    for index, part in enumerate(re.split(r'(\*\*.*?\*\*|`.*?`)', text)):
+    for part in re.split(r'(\*\*.*?\*\*|`.*?`|\[[^\]]+\]\([^)]+\))', text):
         if part.startswith('**'):
             paragraph.add_run(part[2:-2]).bold = True
         elif part.startswith('`'):
             run = paragraph.add_run(part[1:-1])
             run.font.name, run.font.size = 'Consolas', Pt(9)
+        elif (link := re.fullmatch(r'\[([^\]]+)\]\(([^)]+)\)', part)):
+            hyperlink = OxmlElement('w:hyperlink')
+            hyperlink.set(qn('r:id'), paragraph.part.relate_to(link[2], RT.HYPERLINK, is_external=True))
+            run = OxmlElement('w:r')
+            properties = OxmlElement('w:rPr')
+            color = OxmlElement('w:color')
+            color.set(qn('w:val'), '245B75')
+            properties.append(color)
+            run.append(properties)
+            value = OxmlElement('w:t')
+            value.text = link[1]
+            run.append(value)
+            hyperlink.append(run)
+            paragraph._p.append(hyperlink)
         else:
             paragraph.add_run(part)
+
+def screenshot(label, relative_path):
+    source = docs / relative_path
+    # Word recorta márgenes y navegación; el PNG original se incrusta sin modificar.
+    focus = {
+        'CP-03-producto-creado.png': (270, 108, 1090, 488),
+        'CP-06-stock-insuficiente.png': (270, 104, 960, 770),
+        'CP-07-alerta-minimo.png': (270, 300, 1090, 651),
+    }
+    with Image.open(source) as bitmap:
+        width, height = bitmap.size
+    left, top, right, bottom = focus[source.name]
+    if document.paragraphs:
+        document.paragraphs[-1].paragraph_format.keep_with_next = True
+    paragraph = document.add_paragraph()
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    paragraph.paragraph_format.space_after = Pt(10)
+    display_width = 14.5 if source.name == 'CP-06-stock-insuficiente.png' else 17
+    picture = paragraph.add_run().add_picture(str(source), width=Cm(display_width),
+                                             height=Cm(display_width * (bottom - top) / (right - left)))
+    rectangle = OxmlElement('a:srcRect')
+    for side, value in {'l': left / width, 't': top / height,
+                        'r': (width - right) / width, 'b': (height - bottom) / height}.items():
+        rectangle.set(side, str(round(value * 100000)))
+    picture._inline.xpath('.//pic:blipFill')[0].insert(1, rectangle)
+    picture._inline.docPr.set('descr', label)
 
 def table(rows):
     count = len(rows[0])
@@ -50,6 +90,10 @@ def table(rows):
     widths = [17 * size / sum(weights) for size in weights]
     if 'Probabilidad' in rows[0]:
         widths = [5.2, 2.5, 2.1, 7.2]
+    if rows[0][0] == 'Caso':
+        widths = [1.5, 6, 9.5]
+    elif rows[0][0] == 'Riesgo':
+        widths = [5.2, 3.5, 8.3]
     grid = document.add_table(rows=1, cols=count)
     grid.autofit = False
     for column, width in zip(grid.columns, widths):
@@ -68,17 +112,17 @@ def table(rows):
                 margin.append(side)
             properties.append(margin)
             shade = OxmlElement('w:shd')
-            shade.set(qn('w:fill'), '234E5A' if index == 0 else ('F2F5F7' if index % 2 else 'FFFFFF'))
+            shade.set(qn('w:fill'), 'E4EEEB' if index == 0 else 'FFFFFF')
             properties.append(shade)
             paragraph = cell.paragraphs[0]
             paragraph.paragraph_format.space_after = Pt(1)
             paragraph.paragraph_format.line_spacing = 1.05
             inline(paragraph, value)
             for run in paragraph.runs:
-                run.font.size = Pt(9)
+                run.font.size = Pt(10)
                 if index == 0:
                     run.font.bold = True
-                    run.font.color.rgb = RGBColor(255, 255, 255)
+                    run.font.color.rgb = RGBColor(0, 0, 0)
         # Keep rows intact; headings repeat when a table spans pages.
         row_property = grid.rows[index]._tr.get_or_add_trPr()
         row_property.append(OxmlElement('w:cantSplit'))
@@ -106,6 +150,11 @@ def markdown(source, heading_shift=0, skip_title=True):
         if not line:
             index += 1
             continue
+        picture = re.fullmatch(r'!\[([^\]]*)\]\(([^)]+)\)', line)
+        if picture:
+            screenshot(picture[1], picture[2])
+            index += 1
+            continue
         if line.startswith('|'):
             rows = []
             while index < len(lines) and lines[index].strip().startswith('|'):
@@ -121,67 +170,38 @@ def markdown(source, heading_shift=0, skip_title=True):
             if not (skip_title and level == 1):
                 document.add_heading(heading[2], min(3, max(1, level - 1 + heading_shift)))
         else:
-            paragraph = document.add_paragraph()
+            bullet = line.startswith('- ')
+            paragraph = document.add_paragraph(style='List Bullet' if bullet else None)
+            if bullet:
+                line = line[2:]
             if code:
                 paragraph.add_run(line).font.name = 'Consolas'
             else:
                 inline(paragraph, line)
         index += 1
 
-document.add_paragraph('UNIVERSIDAD DEL VALLE', style='Subtitle')
-document.add_paragraph('Univalle Bolivia', style='Subtitle')
-document.add_paragraph('Software Quality Assurance', style='Subtitle')
+document.add_paragraph('Universidad del Valle Univalle')
+document.add_paragraph('Software Quality Assurance')
 document.add_paragraph('\n')
-document.add_paragraph('Test Plan SQA de StockFácil', style='Title')
-document.add_paragraph('Actualización del plan en un entorno ágil con Kanban')
+document.add_paragraph('Plan de pruebas de StockFácil', style='Title')
+document.add_paragraph('Organización del trabajo y resultados de las pruebas')
 document.add_paragraph('\n')
-for text in ['Andre Romero Caballero', 'Santiago Camacho Echalar',
-             'Docente Rolando Lara', '27 de octubre de 2026', 'Versión 1.0']:
-    document.add_paragraph(text)
-document.add_paragraph('\n')
-document.add_paragraph('El plan documenta el alcance, las pruebas y el control de calidad del inventario. '
-                       'Integra resultados reales de PHPUnit, Selenium y Cypress y conserva los pendientes de revisión y aceptación humanas.')
+document.add_paragraph('Andre Romero Caballero\nSantiago Camacho Echalar')
+document.add_paragraph('Docente Rolando Lara')
+document.add_paragraph('27 de octubre de 2026')
 document.add_page_break()
 source = (docs / 'Test_Plan_SQA.md').read_text(encoding='utf-8')
-body = source[source.index('## 1 Introducción'):source.index('## Anexo A')]
+body = source[source.index('## 1 Introducción'):]
 markdown(body)
-document.add_heading('Anexo A Casos de prueba y escenarios BDD', 1)
-markdown((docs / 'Casos_de_Prueba.md').read_text(encoding='utf-8'), heading_shift=1)
-document.add_heading('Escenarios BDD vinculados', 2)
-feature = (root / 'tests/Browser/inventario.feature').read_text(encoding='utf-8')
-for line in feature.splitlines():
-    if not line.strip() or line.lstrip().startswith('#'):
-        continue
-    paragraph = document.add_paragraph(line.strip())
-    paragraph.paragraph_format.space_after = Pt(3)
-    if line.strip().startswith(('Escenario:', '@')):
-        paragraph.paragraph_format.keep_with_next = True
-document.add_heading('Anexo B Resultados de pruebas', 1)
-markdown((docs / 'Resultados_Pruebas.md').read_text(encoding='utf-8'), heading_shift=1)
-document.add_heading('Anexo C Flujo Kanban y tareas', 1)
-markdown((docs / 'Kanban_Guia.md').read_text(encoding='utf-8'), heading_shift=1)
-with (docs / 'Kanban_Tareas.csv').open(encoding='utf-8-sig') as stream:
-    tasks = list(csv.DictReader(stream))
-table([['Tarea', 'Responsable propuesto', 'Estado local']] +
-      [[task['Titulo'], task['Responsable'], task['Estado']] for task in tasks])
-document.add_paragraph('Los títulos K-01 a K-11 son IDs locales preparados. '
-                       'GitHub_Entrega.md contiene los pasos exactos para crear Issues, tablero, PR y verificar Actions. '
-                       'Pull_Request_SQA.md conserva la descripción lista para revisión. '
-                       'Repositorio https://github.com/AndreRCRO/StockFacil.')
-document.add_heading('Anexo D Auditoría interna', 1)
-markdown((docs / 'Auditoria_Interna_SQA.md').read_text(encoding='utf-8'), heading_shift=1)
-document.add_heading('Fuentes', 1)
-markdown(source.split('## Fuentes\n', 1)[1])
 footer = section.footer.paragraphs[0]
 footer.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-footer.add_run('StockFácil SQA  |  ')
 field = OxmlElement('w:fldSimple')
 field.set(qn('w:instr'), 'PAGE')
 footer._p.append(field)
 for run in footer.runs:
     run.font.size = Pt(8)
-document.core_properties.title = 'Test Plan SQA de StockFácil'
-document.core_properties.subject = 'Plan de calidad con Kanban y resultados verificables'
+document.core_properties.title = 'Plan de pruebas de StockFácil'
+document.core_properties.subject = 'Pruebas y resultados explicados con capturas reales'
 document.core_properties.author = 'Andre Romero Caballero y Santiago Camacho Echalar'
 document.core_properties.comments = 'Revisión humana y aceptación pendientes según el informe.'
 destination = docs / 'Test_Plan_SQA.docx'

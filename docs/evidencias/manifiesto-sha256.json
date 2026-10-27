@@ -1,5 +1,5 @@
 {
-  "docs/evidencias/auditoria-verificacion.json": "3b99122780ea1c90d9f9e6b6882aa4e3a33b73e9a703056fd8eb0515a73b3d43",
+  "docs/evidencias/auditoria-verificacion.json": "23e7807fc566b9f0dbdb73e2b17b452ca4ca8bd43be7dbb73fbf8ec46e7ca4d3",
   "docs/evidencias/build.txt": "8b627b16e7c3a91c9abfd4f29a411306f65c2fc4e7a15b39456a02534e63de79",
   "docs/evidencias/composer-validacion.txt": "617d39e3b4752168f63039991b7e1efaca11e54a1f5a9153d93b0d4efe91fe05",
   "docs/evidencias/consigna-docente.txt": "9c21551215e020c292938a73de164f23e51e335468cb289619fa004bf4b19905",
@@ -39,5 +39,5 @@
   "docs/evidencias/selenium-resultados.json": "b28902a711379a1b6444acc9e47aecd10fdabd3a5a1b7eb9380d226ddc6bfe78",
   "docs/evidencias/selenium-salida.txt": "d8dbaf7cf236eee9612bf686a5907c948fc1d84568a55829877b88e6dcd2d829",
   "docs/evidencias/selenium-servidor.txt": "b86220a2189e96446e5318bc3287007c9298ecb9960ee9386843f23c8f9a2118",
-  "docs/evidencias/word-verificacion.json": "310e14bbc0df566867d9290220deba193729394f3c9d14600c9ed6c60ec81bb5"
+  "docs/evidencias/word-verificacion.json": "9a02ccf2a430dd8a8dcdd1d706fc57d3c25bc9b018ea76576c32466b25eb9c27"
 }

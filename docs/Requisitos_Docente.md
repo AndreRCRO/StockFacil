@@ -5,7 +5,7 @@ Fuente principal: Plan SQA_web.pdf, cinco páginas, proporcionado por Andre. Se 
 | ID | Requisito o evidencia | Localización | Estado verificable |
 | --- | --- | --- | --- |
 | RD-01 | Describir el marco ágil y roles de calidad, página 2 | Test Plan secciones 1, 4 y Kanban_Guia.md | Kanban definido para dos integrantes |
-| RD-02 | Revisar plan anterior y adaptar estrategia continua, página 2 | Test Plan 1.3 | Se contrastaron informes previos; no se encontró Test Plan autónomo anterior |
+| RD-02 | Revisar plan anterior y adaptar estrategia continua, página 2 | Test Plan 1 | Se contrastaron informes previos; no se encontró Test Plan autónomo anterior |
 | RD-03 | Usar dos entre TestLink, Squash, Selenium y Cypress, página 2 | tests/Browser y cypress/e2e | Selenium y Cypress ejecutados |
 | RD-04 | Aplicar TDD, BDD o ATDD, página 2; repositorio con BDD o unitarias, página 3 | tests/Browser/inventario.feature y tests/Unit | Tres escenarios BDD vinculados; unidad ejecutada; no se atribuye TDD nuevo |
 | RD-05 | Integración continua y priorización por valor, página 2 | .github/workflows/pruebas.yml y Test Plan 3 | Ejecución 40573040837 aprobada y artifact verificado |
