@@ -1,0 +1,20 @@
+[
+  {
+    "file": "output/pdf/informe-sqa-hu01.pdf",
+    "pages": 12,
+    "characters": 17255,
+    "source": "docs/sqa/06-informes-finales/informe-sqa-hu01.md"
+  },
+  {
+    "file": "output/pdf/informe-sqa-hu02.pdf",
+    "pages": 13,
+    "characters": 18231,
+    "source": "docs/sqa/06-informes-finales/informe-sqa-hu02.md"
+  },
+  {
+    "file": "output/pdf/informe-sqa-general.pdf",
+    "pages": 8,
+    "characters": 9593,
+    "source": "docs/sqa/06-informes-finales/informe-sqa-general.md"
+  }
+]

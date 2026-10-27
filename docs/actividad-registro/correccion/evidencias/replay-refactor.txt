@@ -1,0 +1,10 @@
+PHPUnit 12.5.39 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.33
+Configuration: C:\Univalle\SQA\StockFácil\phpunit.xml
+
+....                                                                4 / 4 (100%)
+
+Time: 00:00.405, Memory: 54.00 MB
+
+OK (4 tests, 27 assertions)

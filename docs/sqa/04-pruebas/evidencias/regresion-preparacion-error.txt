@@ -1,0 +1,65 @@
+
+   FAIL  Tests\Feature\InventoryTest
+  ⨯ invalid movement is rejected with data set #0                                                                0.83s  
+  ⨯ invalid movement is rejected with data set #1                                                                0.05s  
+  ✓ invalid movement is rejected with data set #2                                                                0.10s  
+  ✓ invalid movement is rejected with data set #3                                                                0.04s  
+  ✓ invalid movement is rejected with data set #4                                                                0.04s  
+  ✓ invalid movement is rejected with data set #5                                                                0.04s  
+  ✓ invalid movement is rejected with data set #6                                                                0.04s  
+  ⨯ invalid movement is rejected with data set #7                                                                0.04s  
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\InventoryTest > invalid movement is rejected with data set #0                          Error   
+  Call to undefined method Tests\Feature\InventoryTest::assertSessionHasErrors()
+
+  at tests\Feature\InventoryTest.php:76
+     72▕     public function test_invalid_movement_is_rejected(string $field, mixed $value): void
+     73▕     {
+     74▕         $this->post(route('movements.store'), $this->data([$field => $value]))->assertSessionHasErrors($field);
+     75▕         if ($field === 'quantity' && in_array($value, [0, -1], true)) {
+  ➜  76▕             $this->assertSessionHasErrors(['quantity' => 'La cantidad debe ser mayor o igual a 1.']);
+     77▕         }
+     78▕         if ($field === 'quantity' && $value === Product::MAX_STOCK + 1) {
+     79▕             $this->assertSessionHasErrors(['quantity' => 'La cantidad no debe superar 2147483647.']);
+     80▕         }
+
+  1   tests\Feature\InventoryTest.php:76
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\InventoryTest > invalid movement is rejected with data set #1                          Error   
+  Call to undefined method Tests\Feature\InventoryTest::assertSessionHasErrors()
+
+  at tests\Feature\InventoryTest.php:76
+     72▕     public function test_invalid_movement_is_rejected(string $field, mixed $value): void
+     73▕     {
+     74▕         $this->post(route('movements.store'), $this->data([$field => $value]))->assertSessionHasErrors($field);
+     75▕         if ($field === 'quantity' && in_array($value, [0, -1], true)) {
+  ➜  76▕             $this->assertSessionHasErrors(['quantity' => 'La cantidad debe ser mayor o igual a 1.']);
+     77▕         }
+     78▕         if ($field === 'quantity' && $value === Product::MAX_STOCK + 1) {
+     79▕             $this->assertSessionHasErrors(['quantity' => 'La cantidad no debe superar 2147483647.']);
+     80▕         }
+
+  1   tests\Feature\InventoryTest.php:76
+
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   FAILED  Tests\Feature\InventoryTest > invalid movement is rejected with data set #7                          Error   
+  Call to undefined method Tests\Feature\InventoryTest::assertSessionHasErrors()
+
+  at tests\Feature\InventoryTest.php:79
+     75▕         if ($field === 'quantity' && in_array($value, [0, -1], true)) {
+     76▕             $this->assertSessionHasErrors(['quantity' => 'La cantidad debe ser mayor o igual a 1.']);
+     77▕         }
+     78▕         if ($field === 'quantity' && $value === Product::MAX_STOCK + 1) {
+  ➜  79▕             $this->assertSessionHasErrors(['quantity' => 'La cantidad no debe superar 2147483647.']);
+     80▕         }
+     81▕         $this->assertSame(10, $this->product->refresh()->stock);
+     82▕         $this->assertDatabaseCount('movements', 1);
+     83▕     }
+
+  1   tests\Feature\InventoryTest.php:79
+
+
+  Tests:    3 failed, 5 passed (26 assertions)
+  Duration: 2.28s
+

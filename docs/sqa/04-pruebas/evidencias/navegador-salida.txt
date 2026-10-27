@@ -1,0 +1,14 @@
+CP-01: aprobado - Producto registrado. El stock inicial quedó en el historial.
+CP-02: aprobado - El campo nombre es obligatorio.
+CP-03: aprobado - El SKU ya está registrado. Usa otro valor.
+CP-04: aprobado - El precio debe ser mayor o igual a 0.
+CP-05: aprobado - El stock inicial debe ser mayor o igual a 0.
+CP-06: aprobado - Producto SQA-001 visible en el listado filtrado, Bs 8,50 y stock 10.
+CP-07: aprobado - Resumen y mensaje junto al nombre visibles; SKU conservado y aria-invalid=true.
+CP-08: aprobado - Entrada de 5 aceptada; historial muestra stock 10 a 15.
+CP-09: aprobado - Salida de 12 aceptada; historial muestra stock 15 a 3.
+CP-10: aprobado - Stock insuficiente. Solo hay 3 unidades disponibles. Saldo conservado: 3.
+CP-11: aprobado - El cantidad debe ser mayor o igual a 1. Saldo conservado: 3.
+CP-12: aprobado - El cantidad debe ser mayor o igual a 1. Saldo conservado: 3.
+CP-13: aprobado - Tres movimientos: entrada inicial 0 a 10, entrada 10 a 15 y salida 15 a 3; responsable, fecha y observaciones visibles.
+CP-14: aprobado - Alerta Stock bajo visible con stock 3 y mínimo 3.

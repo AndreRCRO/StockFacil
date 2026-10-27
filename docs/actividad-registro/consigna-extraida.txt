@@ -1,0 +1,184 @@
+PÁGINA 1
+ 
+ 
+Actividad grupal: “Del comportamiento a la implementación” 
+ 
+Objetivo: aplicar TDD, ATDD y BDD en un caso práctico simple, integrando 
+conceptos de DDD. 
+ 
+Equipos: 3 estudiantes 
+Cada integrante debe explicar el concepto de las metodologías ágiles (TDD, ATDD 
+y BDD) 
+ 
+Caso propuesto: 
+Desarrollar una funcionalidad de registro de usuario en un sistema simple. 
+ 
+Fases de la actividad: 
+ 
+ATDD 
+Cada grupo define 2 criterios de aceptación junto con un “rol cliente” dentro del 
+equipo. 
+ 
+BDD 
+Redactan 1 escenario por criterio usando formato Gherkin. 
+ 
+TDD 
+Implementan uno de los escenarios: 
+Escriben el test unitario que falle 
+Codifican lo mínimo para pasarlo 
+Refactorizan 
+ 
+ 
+
+PÁGINA 2
+ 
+ 
+DDD 
+Definen elementos del dominio: 
+ 
+Entidad principal (Usuario) 
+Atributos claves 
+Reglas de negocio asociadas 
+Producto esperado por grupo: 
+ 
+2 criterios de aceptación 
+1 escenario Gherkin 
+1 test unitario (fallido → pasado) 
+Modelo de dominio (simple) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PÁGINA 3
+ 
+ 
+GUÍA PRÁCTICA PARA LA DINÁMICA 
+ 
+Tema: Registro de usuario 
+Equipos: 3 estudiantes 
+ 
+FASE 1: ATDD – Criterios de aceptación  
+ 
+Cada grupo define 2 criterios de aceptación desde la perspectiva del usuario. 
+Pueden usar la estructura: 
+ 
+Como [rol] 
+Quiero [función] 
+Para [beneficio] 
+ 
+Ejemplo 1: 
+Como nuevo usuario, quiero registrarme usando mi correo electrónico, para acceder 
+al sistema. 
+ 
+Ejemplo 2: 
+Como administrador, quiero evitar registros con correos duplicados para mantener 
+integridad. 
+ 
+FASE 2: BDD – Escenarios en Gherkin (15 min) 
+ 
+Por cada criterio, redactan 1 escenario usando: 
+Dado / Cuando / Entonces 
+ 
+Ejemplo (basado en el primer criterio): 
+
+PÁGINA 4
+ 
+ 
+Funcionalidad: Registro de usuario 
+ 
+Escenario: Registro exitoso con datos válidos 
+  Dado que ingreso un correo válido y una contraseña de 8 caracteres 
+  Cuando confirmo el registro 
+  Entonces el sistema crea mi cuenta y muestra un mensaje de éxito 
+ 
+Segundo escenario: 
+ 
+Escenario: Intento de registro con correo duplicado 
+  Dado que ya existe un usuario con el correo "test@mail.com" 
+  Cuando intento registrarme con el mismo correo 
+  Entonces el sistema rechaza el registro y muestra un mensaje de error 
+ 
+FASE 3: TDD – Implementación mínima 
+ 
+Cada grupo toma UNO de los escenarios y lo implementa con TDD. 
+ 
+Paso 1 – Escribir la prueba (RED): 
+Ejemplo en pseudoCódigo o JUnit/NUnit/PyTest: 
+ 
+def test_registro_exitoso(): 
+    usuario = RegistrarUsuario("test@mail.com", "abc12345") 
+    assert usuario.creado == True 
+ 
+ 
+ 
+
+PÁGINA 5
+ 
+ 
+Paso 2 – Código mínimo (GREEN): 
+Implementar solo lo necesario para pasar la prueba. 
+ 
+class RegistrarUsuario: 
+    def __init__(self, correo, password): 
+        self.creado = True 
+ 
+ 
+Paso 3 – Refactor: 
+Mejorar nombres, estructura, validaciones. 
+ 
+FASE 4: DDD – Modelo del dominio  
+ 
+Cada grupo debe definir: 
+ 
+Entidad principal: Usuario 
+Atributos mínimos: correo, nombre (opcional), contraseña 
+Reglas de negocio: 
+ 
+No correos duplicados 
+Formato válido de email 
+Contraseña con mínimo 8 caracteres 
+ 
+Lenguaje común ("lenguaje ubicuo"): 
+Usar términos como Usuario, Registro, Validación, Dominio, Repositorio, etc. 
+ 
+ 
+
+PÁGINA 6
+ 
+ 
+Pueden representarlo en un mini - diagrama o lista: 
+ 
+Entidad: Usuario 
+ Atributos: 
+   - email 
+   - password 
+Reglas: 
+   - Email no repetido 
+   - Password mínimo 8 caracteres 
+Servicio de Dominio: RegistroUsuario 
+ 
+ENTREGA DEL GRUPO (producto final esperado) 
+ 
+Cada equipo debe entregar: 
+ 
+2 criterios de aceptación (ATDD) 
+1 escenario Gherkin (BDD) 
+1 test aplicado con TDD (código o pseudocódigo) 
+Modelo del dominio (lista o diagrama simple) 
+ 
+ 
+ 
+ 
+ 

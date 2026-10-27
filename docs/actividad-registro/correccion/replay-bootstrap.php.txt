@@ -1,0 +1,22 @@
+<?php
+
+// Solo para reproducir snapshots en un proceso PHPUnit separado.
+$projectRoot = dirname(__DIR__, 3);
+require $projectRoot.'/vendor/autoload.php';
+$stage = getenv('SQA_TDD_STAGE') ?: 'refactor';
+if (! in_array($stage, ['antes', 'green', 'refactor'], true)) {
+    throw new InvalidArgumentException('Etapa TDD desconocida.');
+}
+if ($stage !== 'refactor') {
+    $files = [
+        'App\\Services\\RegisterUser' => 'RegisterUser.php.txt',
+        'App\\Http\\Requests\\RegisterRequest' => 'RegisterRequest.php.txt',
+        'App\\Http\\Requests\\LoginRequest' => 'LoginRequest.php.txt',
+        'App\\Domain\\Users\\RegistrationData' => 'RegistrationData.php.txt',
+    ];
+    spl_autoload_register(static function (string $class) use ($files, $stage): void {
+        if (isset($files[$class])) {
+            require __DIR__.'/tdd/'.$stage.'/'.$files[$class];
+        }
+    }, true, true);
+}

@@ -1,0 +1,121 @@
+{
+  "base_url": "http://127.0.0.1:8003",
+  "isolated_database": true,
+  "note": "noValidate usado intencionalmente en pruebas negativas para verificar validación del servidor",
+  "cases": [
+    {
+      "id": "CP-01",
+      "status": "aprobado",
+      "obtained": "Producto registrado. El stock inicial quedó en el historial.",
+      "evidence": "hu01-registro-exitoso.png",
+      "url": "http://127.0.0.1:8003/products",
+      "recorded_at": "2026-10-13T06:25:08.840Z"
+    },
+    {
+      "id": "CP-02",
+      "status": "aprobado",
+      "obtained": "El campo nombre es obligatorio.",
+      "evidence": "hu01-error-nombre.png",
+      "url": "http://127.0.0.1:8003/products/create",
+      "recorded_at": "2026-10-13T06:25:11.335Z"
+    },
+    {
+      "id": "CP-03",
+      "status": "aprobado",
+      "obtained": "El SKU ya está registrado. Usa otro valor.",
+      "evidence": "hu01-error-sku.png",
+      "url": "http://127.0.0.1:8003/products/create",
+      "recorded_at": "2026-10-13T06:25:13.765Z"
+    },
+    {
+      "id": "CP-04",
+      "status": "aprobado",
+      "obtained": "El precio debe ser mayor o igual a 0.",
+      "evidence": "hu01-error-precio.png",
+      "url": "http://127.0.0.1:8003/products/create",
+      "recorded_at": "2026-10-13T06:25:16.135Z"
+    },
+    {
+      "id": "CP-05",
+      "status": "aprobado",
+      "obtained": "El stock inicial debe ser mayor o igual a 0.",
+      "evidence": "hu01-error-stock-inicial.png",
+      "url": "http://127.0.0.1:8003/products/create",
+      "recorded_at": "2026-10-13T06:25:18.501Z"
+    },
+    {
+      "id": "CP-06",
+      "status": "aprobado",
+      "obtained": "Producto SQA-001 visible en el listado filtrado, Bs 8,50 y stock 10.",
+      "evidence": "hu01-producto-listado.png",
+      "url": "http://127.0.0.1:8003/products?q=SQA-001",
+      "recorded_at": "2026-10-13T06:25:19.254Z"
+    },
+    {
+      "id": "CP-07",
+      "status": "aprobado",
+      "obtained": "Resumen y mensaje junto al nombre visibles; SKU conservado y aria-invalid=true.",
+      "evidence": "hu01-mensajes-validacion.png",
+      "url": "http://127.0.0.1:8003/products/create",
+      "recorded_at": "2026-10-13T06:25:21.627Z"
+    },
+    {
+      "id": "CP-08",
+      "status": "aprobado",
+      "obtained": "Entrada de 5 aceptada; historial muestra stock 10 a 15.",
+      "evidence": "hu02-entrada-exitosa.png",
+      "url": "http://127.0.0.1:8003/movements",
+      "recorded_at": "2026-10-13T06:25:25.651Z"
+    },
+    {
+      "id": "CP-09",
+      "status": "aprobado",
+      "obtained": "Salida de 12 aceptada; historial muestra stock 15 a 3.",
+      "evidence": "hu02-salida-exitosa.png",
+      "url": "http://127.0.0.1:8003/movements",
+      "recorded_at": "2026-10-13T06:25:28.057Z"
+    },
+    {
+      "id": "CP-10",
+      "status": "aprobado",
+      "obtained": "Stock insuficiente. Solo hay 3 unidades disponibles. Saldo conservado: 3.",
+      "evidence": "hu02-error-insuficiente.png",
+      "url": "http://127.0.0.1:8003/movements/create?type=salida&product_id=13",
+      "recorded_at": "2026-10-13T06:25:30.442Z"
+    },
+    {
+      "id": "CP-11",
+      "status": "aprobado",
+      "obtained": "La cantidad debe ser mayor o igual a 1. Saldo conservado: 3.",
+      "evidence": "hu02-error-cero.png",
+      "url": "http://127.0.0.1:8003/movements/create?type=salida&product_id=13",
+      "recorded_at": "2026-10-13T06:29:33.277Z"
+    },
+    {
+      "id": "CP-12",
+      "status": "aprobado",
+      "obtained": "La cantidad debe ser mayor o igual a 1. Saldo conservado: 3.",
+      "evidence": "hu02-error-negativo.png",
+      "url": "http://127.0.0.1:8003/movements/create?type=salida&product_id=13",
+      "recorded_at": "2026-10-13T06:29:35.625Z"
+    },
+    {
+      "id": "CP-13",
+      "status": "aprobado",
+      "obtained": "Tres movimientos: entrada inicial 0 a 10, entrada 10 a 15 y salida 15 a 3; responsable, fecha y observaciones visibles.",
+      "evidence": "hu02-historial.png",
+      "url": "http://127.0.0.1:8003/movements?product_id=13",
+      "recorded_at": "2026-10-13T06:25:35.811Z"
+    },
+    {
+      "id": "CP-14",
+      "status": "aprobado",
+      "obtained": "Alerta Stock bajo visible con stock 3 y mínimo 3.",
+      "evidence": "hu02-alerta-minimo.png",
+      "url": "http://127.0.0.1:8003/stock-bajo?q=SQA-001",
+      "recorded_at": "2026-10-13T06:25:36.570Z"
+    }
+  ],
+  "js_errors": [],
+  "correction": "HR-04: CP-11 y CP-12 reejecutados; REG-MAX adicional. Historial permanece en tres movimientos."
+}

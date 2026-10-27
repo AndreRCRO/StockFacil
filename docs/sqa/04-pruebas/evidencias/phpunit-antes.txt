@@ -1,0 +1,116 @@
+PHPUnit 12.5.39 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.33
+Configuration: C:\Univalle\SQA\StockFácil\phpunit.xml
+
+
+   PASS  Tests\Feature\AuthenticationTest
+  ✓ internal routes require authentication                                                                       0.80s  
+  ✓ login and logout                                                                                             0.21s  
+  ✓ invalid credentials and login throttling                                                                     1.12s  
+  ✓ public registration is not available                                                                         0.06s  
+
+   PASS  Tests\Feature\ConcurrencyTest
+  ✓ simultaneous exits cannot oversell and history remains consistent                                            1.81s  
+
+   PASS  Tests\Feature\InventoryTest
+  ✓ entry increases stock and records history                                                                    0.10s  
+  ✓ exit decreases stock and alert appears at exact minimum                                                      0.10s  
+  ✓ exact stock exit is allowed and marks product out of stock                                                   0.16s  
+  ✓ insufficient stock preserves balance and history                                                             0.05s  
+  ✓ invalid movement is rejected with data set #0                                                                0.04s  
+  ✓ invalid movement is rejected with data set #1                                                                0.05s  
+  ✓ invalid movement is rejected with data set #2                                                                0.06s  
+  ✓ invalid movement is rejected with data set #3                                                                0.05s  
+  ✓ invalid movement is rejected with data set #4                                                                0.04s  
+  ✓ invalid movement is rejected with data set #5                                                                0.05s  
+  ✓ invalid movement is rejected with data set #6                                                                0.05s  
+  ✓ inactive product rejects movements in request and service                                                    0.08s  
+  ✓ service uses current database balance instead of stale model                                                 0.05s  
+  ✓ movement failure rolls back stock update                                                                     0.05s  
+  ✓ database rejects negative stock                                                                              0.05s  
+  ✓ history filters and pagination preserve filter                                                               0.11s  
+  ✓ replenishment removes alert and inactive products are excluded                                               0.09s  
+  ✓ history has no edit or delete endpoints                                                                      0.06s  
+
+   PASS  Tests\Feature\ProductTest
+  ✓ valid product appears in listing with traceable initial stock                                                0.09s  
+  ✓ invalid product is rejected with data set #0                                                                 0.07s  
+  ✓ invalid product is rejected with data set #1                                                                 0.06s  
+  ✓ invalid product is rejected with data set #2                                                                 0.07s  
+  ✓ invalid product is rejected with data set #3                                                                 0.07s  
+  ✓ invalid product is rejected with data set #4                                                                 0.08s  
+  ✓ invalid product is rejected with data set #5                                                                 0.07s  
+  ✓ invalid product is rejected with data set #6                                                                 0.07s  
+  ✓ invalid product is rejected with data set #7                                                                 0.07s  
+  ✓ invalid product is rejected with data set #8                                                                 0.07s  
+  ✓ invalid product is rejected with data set #9                                                                 0.07s  
+  ✓ invalid product is rejected with data set #10                                                                0.06s  
+  ✓ duplicate sku is rejected even with lowercase                                                                0.06s  
+  ✓ zero initial stock and zero price are valid without zero movement                                            0.05s  
+  ✓ initial movement failure rolls back product creation                                                         0.05s  
+  ✓ edit updates information but cannot modify stock                                                             0.06s  
+  ✓ deactivation preserves history and hides from active listing                                                 0.10s  
+  ✓ search and category filter work together                                                                     0.08s  
+
+   PASS  Tests\Feature\SeederTest
+  ✓ seed is repeatable and demo history matches balances                                                         0.24s  
+
+  Tests:    42 passed (276 assertions)
+  Duration: 7.79s
+
+Time: 00:06.739, Memory: 60.00 MB
+
+Authentication (Tests\Feature\Authentication)
+ ✔ Internal routes require authentication
+ ✔ Login and logout
+ ✔ Invalid credentials and login throttling
+ ✔ Public registration is not available
+
+Concurrency (Tests\Feature\Concurrency)
+ ✔ Simultaneous exits cannot oversell and history remains consistent
+
+Inventory (Tests\Feature\Inventory)
+ ✔ Entry increases stock and records history
+ ✔ Exit decreases stock and alert appears at exact minimum
+ ✔ Exact stock exit is allowed and marks product out of stock
+ ✔ Insufficient stock preserves balance and history
+ ✔ Invalid movement is rejected with data set #0
+ ✔ Invalid movement is rejected with data set #1
+ ✔ Invalid movement is rejected with data set #2
+ ✔ Invalid movement is rejected with data set #3
+ ✔ Invalid movement is rejected with data set #4
+ ✔ Invalid movement is rejected with data set #5
+ ✔ Invalid movement is rejected with data set #6
+ ✔ Inactive product rejects movements in request and service
+ ✔ Service uses current database balance instead of stale model
+ ✔ Movement failure rolls back stock update
+ ✔ Database rejects negative stock
+ ✔ History filters and pagination preserve filter
+ ✔ Replenishment removes alert and inactive products are excluded
+ ✔ History has no edit or delete endpoints
+
+Product (Tests\Feature\Product)
+ ✔ Valid product appears in listing with traceable initial stock
+ ✔ Invalid product is rejected with data set #0
+ ✔ Invalid product is rejected with data set #1
+ ✔ Invalid product is rejected with data set #2
+ ✔ Invalid product is rejected with data set #3
+ ✔ Invalid product is rejected with data set #4
+ ✔ Invalid product is rejected with data set #5
+ ✔ Invalid product is rejected with data set #6
+ ✔ Invalid product is rejected with data set #7
+ ✔ Invalid product is rejected with data set #8
+ ✔ Invalid product is rejected with data set #9
+ ✔ Invalid product is rejected with data set #10
+ ✔ Duplicate sku is rejected even with lowercase
+ ✔ Zero initial stock and zero price are valid without zero movement
+ ✔ Initial movement failure rolls back product creation
+ ✔ Edit updates information but cannot modify stock
+ ✔ Deactivation preserves history and hides from active listing
+ ✔ Search and category filter work together
+
+Seeder (Tests\Feature\Seeder)
+ ✔ Seed is repeatable and demo history matches balances
+
+OK (42 tests, 276 assertions)

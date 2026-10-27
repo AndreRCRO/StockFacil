@@ -1,0 +1,722 @@
+# ACTIVIDAD ACADÉMICA — APLICANDO SQA EN NUESTRAS HISTORIAS DE USUARIO
+
+Actúa como un ingeniero de aseguramiento de la calidad de software (SQA), analista de requisitos y especialista en documentación técnica de proyectos Laravel.
+
+Ya existe un sistema web llamado **StockFácil**, desarrollado con Laravel, Blade, Tailwind CSS y una base de datos local SQLite.
+
+El sistema ya fue implementado. Ahora necesito que revises el código y prepares todos los entregables de una actividad universitaria titulada:
+
+**“Aplicando SQA en nuestras historias de usuario”**
+
+IMPORTANTE: Esta actividad es sobre un proyecto REAL y ya desarrollado.
+
+NO debes crear otro proyecto ni reemplazar el sistema existente.
+
+Debes trabajar directamente sobre el repositorio actual, analizar su implementación, comprobar sus funcionalidades y generar documentos académicos completos basados en evidencia verificable.
+
+# 1. INSTRUCCIONES ORIGINALES DE LA TAREA
+
+La actividad se divide en dos fases.
+
+## FASE 1 — SELECCIÓN Y PREPARACIÓN
+
+Cada equipo debe seleccionar una o dos historias de usuario de su proyecto actual.
+
+Para cada historia se debe definir:
+
+- Criterios de aceptación.
+- Artefactos relacionados: mockups, casos de uso, código y documentación técnica.
+
+## FASE 2 — APLICACIÓN DE ACTIVIDADES SQA
+
+Cada equipo debe aplicar tres tipos de control:
+
+### A. REVISIÓN
+
+Descripción:
+
+Revisión técnica de requisitos o diseño por parte de otro equipo.
+
+Evidencia esperada:
+
+Lista de verificación con observaciones y mejoras.
+
+### B. INSPECCIÓN
+
+Descripción:
+
+Evaluación formal de código o documentación técnica por pares, utilizando una lista de control SQA.
+
+Evidencia esperada:
+
+Acta de inspección que incluya participantes, hallazgos y acciones correctivas.
+
+### C. AUDITORÍA SQA
+
+Descripción:
+
+Revisión independiente por el docente o un equipo designado para verificar la conformidad con el plan de calidad o los estándares del curso.
+
+Evidencia esperada:
+
+Informe de auditoría con grado de cumplimiento expresado en porcentaje y recomendaciones.
+
+# 2. PRODUCTO FINAL QUE EXIGE LA TAREA
+
+Se debe entregar un INFORME SQA POR HISTORIA DE USUARIO.
+
+Cada informe debe contener obligatoriamente:
+
+1. Descripción breve de la historia de usuario.
+2. Evidencia de revisión: lista de hallazgos y acciones.
+3. Evidencia de inspección: capturas, checklist y observaciones.
+4. Resultado de la auditoría: cumplimiento y conclusiones.
+
+Como trabajaremos con dos historias de usuario, debemos generar dos informes completos.
+
+Además, elabora un informe general que reúna ambos resultados.
+
+# 3. HISTORIAS DE USUARIO SELECCIONADAS
+
+Utiliza las siguientes historias de usuario del proyecto StockFácil.
+
+## HISTORIA DE USUARIO 01 — REGISTRO DE PRODUCTOS
+
+Identificador: HU-01
+
+Título: Registro de productos.
+
+Descripción:
+
+Como administrador de una tienda, quiero registrar nuevos productos con su información correspondiente para mantener actualizado el inventario de mi negocio.
+
+Criterios de aceptación:
+
+CA-01: El sistema debe exigir el nombre del producto.
+
+CA-02: El SKU o código del producto debe ser único.
+
+CA-03: El precio no puede ser negativo.
+
+CA-04: La cantidad inicial no puede ser negativa.
+
+CA-05: Cuando se registre correctamente un producto, este debe aparecer en el inventario.
+
+CA-06: Cuando se ingresen datos inválidos, el sistema debe mostrar mensajes de validación.
+
+## HISTORIA DE USUARIO 02 — CONTROL DE EXISTENCIAS
+
+Identificador: HU-02
+
+Título: Control de entradas y salidas de inventario.
+
+Descripción:
+
+Como administrador de una tienda, quiero registrar las entradas y salidas de productos para controlar las cantidades disponibles en mi inventario.
+
+Criterios de aceptación:
+
+CA-01: Las entradas deben incrementar correctamente las existencias.
+
+CA-02: Las salidas deben disminuir correctamente las existencias.
+
+CA-03: No se debe permitir retirar más productos de los disponibles.
+
+CA-04: No se deben permitir movimientos con cantidades iguales o menores a cero.
+
+CA-05: Cada entrada y salida debe quedar registrada en el historial.
+
+CA-06: El sistema debe mostrar alertas cuando un producto alcance su stock mínimo.
+
+IMPORTANTE:
+
+Estos criterios provienen de la planificación del proyecto.
+
+Debes comprobar que realmente coincidan con la implementación.
+
+Si existe una diferencia entre lo planificado y lo desarrollado, documenta la discrepancia como hallazgo, sin modificar arbitrariamente los criterios originales.
+
+# 4. PRIMERA ACTIVIDAD — REVISAR EL PROYECTO REAL
+
+Antes de elaborar cualquier documento:
+
+1. Examina la estructura de carpetas de Laravel.
+2. Identifica los modelos existentes.
+3. Revisa los controladores.
+4. Analiza las rutas.
+5. Revisa las migraciones y relaciones de SQLite.
+6. Examina los Form Requests y validaciones.
+7. Identifica los servicios de inventario.
+8. Revisa las vistas Blade relacionadas.
+9. Examina los archivos de pruebas existentes.
+10. Revisa el README y la documentación del proyecto.
+
+Determina qué archivos permiten comprobar el cumplimiento de las historias HU-01 y HU-02.
+
+En los informes debes mencionar rutas reales de archivos, clases, métodos y, cuando sea posible, líneas relevantes de código.
+
+No inventes nombres de archivos, funciones, controladores ni rutas.
+
+Si algún componente no existe, documenta su ausencia.
+
+# 5. FASE 1 — PREPARACIÓN DE LAS HISTORIAS
+
+Para cada historia de usuario, genera una ficha académica que contenga:
+
+- Código de historia.
+- Nombre.
+- Actor.
+- Descripción.
+- Objetivo.
+- Prioridad.
+- Criterios de aceptación numerados.
+- Artefactos relacionados.
+- Funcionalidades involucradas.
+
+Identifica los artefactos reales del repositorio:
+
+- Vistas Blade utilizadas.
+- Formularios.
+- Controladores.
+- Modelos.
+- Rutas.
+- Migraciones.
+- Servicios.
+- Pruebas automatizadas.
+- Documentación existente.
+
+Si existen mockups, inclúyelos como referencia.
+
+Si no existen, no afirmes que existen. Puedes crear diagramas sencillos basados en la interfaz implementada e identificarlos claramente como documentación elaborada posteriormente.
+
+Elabora también una matriz de trazabilidad que relacione:
+
+Historia de usuario → Criterio de aceptación → Archivo o módulo → Caso de prueba → Resultado → Evidencia.
+
+# 6. FASE 2 — ACTIVIDAD SQA N.º 1: REVISIÓN
+
+Debes preparar una revisión técnica de requisitos y diseño para ambas historias.
+
+Objetivo:
+
+Comprobar que los requisitos sean claros, completos, consistentes, verificables y que el diseño permita cumplirlos.
+
+## Lista de verificación
+
+Crea una checklist con al menos los siguientes aspectos:
+
+1. La historia de usuario tiene una descripción clara.
+2. El actor está correctamente identificado.
+3. El objetivo de la historia es comprensible.
+4. Los criterios de aceptación están definidos.
+5. Los criterios son verificables.
+6. No existen contradicciones entre requisitos.
+7. El diseño corresponde a la funcionalidad solicitada.
+8. Los formularios contienen los campos necesarios.
+9. Se contemplan validaciones de datos.
+10. Se contemplan mensajes de error.
+11. El flujo de uso es coherente.
+12. La historia tiene artefactos técnicos identificables.
+
+Utiliza una tabla con estas columnas:
+
+- N.º
+- Aspecto evaluado
+- Resultado (Cumple / No cumple / No aplica / No verificado)
+- Observación
+- Acción de mejora
+- Referencia de evidencia
+
+Analiza realmente el proyecto.
+
+No marques todos los puntos como satisfactorios sin comprobarlos.
+
+## Hallazgos
+
+Genera una tabla de hallazgos con:
+
+- Identificador.
+- Historia relacionada.
+- Descripción del hallazgo.
+- Evidencia.
+- Nivel de importancia: alto, medio o bajo.
+- Acción recomendada.
+- Estado: pendiente, corregido o por verificar.
+
+Si no se encuentran defectos, indícalo claramente y documenta qué se revisó.
+
+IMPORTANTE:
+
+La consigna indica que la revisión debe ser realizada por otro equipo.
+
+Tú puedes preparar la revisión técnica preliminar y todos los formatos, pero NO debes inventar la participación de otro equipo.
+
+Deja campos para:
+
+- Equipo revisor.
+- Integrantes.
+- Fecha.
+- Firma o validación.
+- Observaciones adicionales del equipo externo.
+
+Identifica claramente cuáles resultados provienen de la evaluación técnica automatizada y cuáles están pendientes de revisión por otro equipo.
+
+# 7. ACTIVIDAD SQA N.º 2: INSPECCIÓN
+
+Realiza un análisis técnico detallado del código y la documentación de HU-01 y HU-02.
+
+La inspección debe enfocarse en la calidad de implementación.
+
+## HU-01 — Inspección del registro de productos
+
+Revisa:
+
+1. Validación del nombre obligatorio.
+2. Validación del SKU único.
+3. Validación del precio.
+4. Validación de stock inicial.
+5. Persistencia en SQLite.
+6. Registro de movimientos iniciales cuando corresponda.
+7. Visualización del producto creado.
+8. Mensajes de error.
+9. Protección de la operación mediante autenticación.
+10. Organización y legibilidad del código.
+
+## HU-02 — Inspección de movimientos
+
+Revisa:
+
+1. Registro de entradas.
+2. Registro de salidas.
+3. Actualización correcta del stock.
+4. Rechazo de salidas sin existencias suficientes.
+5. Validación de cantidades.
+6. Almacenamiento del historial.
+7. Alertas de stock mínimo.
+8. Uso de transacciones para mantener consistencia.
+9. Prevención de modificaciones indebidas de stock.
+10. Organización de la lógica de negocio.
+
+## Checklist de inspección
+
+Genera una lista con:
+
+- Identificador.
+- Elemento inspeccionado.
+- Archivo y método.
+- Criterio SQA.
+- Resultado.
+- Hallazgo u observación.
+- Acción correctiva.
+- Evidencia.
+
+## Acta de inspección
+
+Prepara un acta formal que incluya:
+
+- Nombre del proyecto.
+- Código de historia de usuario.
+- Objetivo de la inspección.
+- Fecha.
+- Modalidad.
+- Alcance.
+- Participantes.
+- Roles.
+- Artefactos inspeccionados.
+- Procedimiento realizado.
+- Hallazgos.
+- Acciones correctivas.
+- Responsables.
+- Estado de cada acción.
+- Conclusiones.
+
+Utiliza un formato académico, claro y profesional.
+
+No inventes nombres de participantes, firmas ni reuniones.
+
+Deja esos campos como pendientes de completar por los participantes reales.
+
+Los hallazgos técnicos podrán prepararse a partir del análisis del código, pero el acta deberá distinguir esta inspección preliminar de la inspección formal realizada por pares.
+
+# 8. PRUEBAS FUNCIONALES Y EVIDENCIAS
+
+Ejecuta las pruebas que sean posibles en el entorno disponible.
+
+Primero identifica los comandos y la configuración reales del proyecto.
+
+Ejecuta las pruebas automatizadas existentes.
+
+Si es necesario, crea pruebas adicionales para cubrir los criterios de aceptación de HU-01 y HU-02.
+
+Utiliza SQLite aislado para las pruebas y protege la base de datos de desarrollo.
+
+No borres ni reinicies los datos reales del proyecto.
+
+## Casos de prueba para HU-01
+
+CP-01: Registrar producto válido.
+
+CP-02: Registrar producto sin nombre.
+
+CP-03: Registrar producto con SKU duplicado.
+
+CP-04: Registrar producto con precio negativo.
+
+CP-05: Registrar producto con stock inicial negativo.
+
+CP-06: Comprobar que el producto guardado aparezca en el listado.
+
+CP-07: Comprobar la visualización de errores de validación.
+
+## Casos de prueba para HU-02
+
+CP-08: Registrar entrada válida.
+
+CP-09: Registrar salida válida.
+
+CP-10: Intentar retirar más unidades que las disponibles.
+
+CP-11: Registrar cantidad igual a cero.
+
+CP-12: Registrar cantidad negativa.
+
+CP-13: Verificar que el historial guarde el movimiento.
+
+CP-14: Verificar alerta de stock mínimo.
+
+Para cada caso documenta:
+
+- ID del caso.
+- Historia de usuario.
+- Objetivo.
+- Precondiciones.
+- Datos de entrada.
+- Pasos.
+- Resultado esperado.
+- Resultado obtenido.
+- Estado: aprobado, fallido, bloqueado o no ejecutado.
+- Evidencia.
+
+Nunca inventes resultados obtenidos.
+
+Si no puedes ejecutar un caso, marca "No ejecutado" y explica por qué.
+
+## Capturas de pantalla
+
+Si el entorno permite abrir la aplicación mediante un navegador automatizado o herramientas ya disponibles:
+
+- Captura el dashboard.
+- Captura el formulario de productos.
+- Captura un registro exitoso.
+- Captura un error de validación.
+- Captura el módulo de movimientos.
+- Captura el historial.
+- Captura las alertas de stock.
+
+Guarda las imágenes con nombres descriptivos.
+
+No fabriques capturas ni sustituyas evidencia real con imágenes generadas artificialmente.
+
+Si no es posible realizar capturas, prepara una lista de capturas pendientes con instrucciones exactas para obtenerlas manualmente.
+
+Conserva los resultados de las pruebas ejecutadas como evidencia.
+
+# 9. ACTIVIDAD SQA N.º 3: AUDITORÍA
+
+Prepara la documentación necesaria para una auditoría SQA de ambas historias.
+
+La auditoría debe evaluar la conformidad con los criterios de aceptación definidos y los estándares de calidad del proyecto.
+
+Como todavía no se ha confirmado una auditoría independiente por parte del docente o equipo designado, debes elaborar una **preevaluación técnica de cumplimiento** y dejar preparado el informe para su posterior validación independiente.
+
+No presentes la evaluación de Codex como si fuera una auditoría oficial realizada por el docente.
+
+## Matriz de cumplimiento
+
+Para cada historia, evalúa sus seis criterios de aceptación.
+
+Utiliza las columnas:
+
+- Código del criterio.
+- Descripción.
+- Evidencia objetiva.
+- Resultado.
+- Observación.
+- Recomendación.
+
+Usa estos estados:
+
+- Cumple.
+- No cumple.
+- No verificado.
+- No aplica, solo cuando esté debidamente justificado.
+
+## Cálculo del cumplimiento
+
+Calcula el cumplimiento verificado mediante:
+
+Cumplimiento (%) = (Criterios comprobados que cumplen / Total de criterios aplicables) × 100
+
+Consideraciones:
+
+- Un criterio no verificado no puede contarse como cumplido.
+- Los criterios no aplicables solo se excluyen si existe una justificación.
+- Presenta además el número de criterios no verificados.
+- Si existen pruebas bloqueadas, explícitalo en el informe.
+- No utilices resultados supuestos para elevar el porcentaje.
+
+Incluye un ejemplo numérico únicamente si corresponde a resultados reales.
+
+Genera:
+
+1. Porcentaje técnico de cumplimiento de HU-01.
+2. Porcentaje técnico de cumplimiento de HU-02.
+3. Porcentaje técnico global del proyecto para los criterios evaluados.
+
+No promedies porcentajes sin considerar el número de criterios aplicables.
+
+Identifica todos estos valores como resultados de la preevaluación técnica, pendientes de validación oficial.
+
+## Informe de auditoría
+
+Preparar:
+
+- Objetivo.
+- Alcance.
+- Referencias de calidad.
+- Criterios evaluados.
+- Procedimiento de verificación.
+- Evidencias consultadas.
+- Matriz de conformidad.
+- Porcentaje de cumplimiento técnico.
+- Hallazgos y no conformidades.
+- Recomendaciones.
+- Conclusiones.
+- Estado de validación independiente.
+
+Dejar campos para:
+
+- Auditor o equipo designado.
+- Fecha de auditoría.
+- Observaciones oficiales.
+- Resultado aprobado por el auditor.
+- Firma o validación.
+
+# 10. ACCIONES CORRECTIVAS
+
+Si detectas defectos reales:
+
+1. Regístralos primero en los informes.
+2. Clasifícalos por importancia.
+3. Identifica el archivo relacionado.
+4. Propón una solución.
+5. Si son correcciones pequeñas, seguras y directamente relacionadas con HU-01 o HU-02, puedes implementarlas.
+6. Ejecuta nuevamente las pruebas pertinentes.
+7. Registra el resultado anterior y posterior de la corrección.
+
+No elimines del informe los defectos encontrados inicialmente.
+
+No realices cambios grandes de arquitectura, rediseños ni nuevas funcionalidades.
+
+El objetivo de la actividad es evaluar la calidad del software existente, no reconstruirlo.
+
+# 11. ESTRUCTURA DE ENTREGABLES
+
+Crea dentro del repositorio la siguiente estructura:
+
+docs/
+  sqa/
+    01-preparacion/
+      historias-usuario.md
+      criterios-aceptacion.md
+      matriz-trazabilidad.md
+
+    02-revision/
+      checklist-hu01.md
+      checklist-hu02.md
+      hallazgos-revision.md
+
+    03-inspeccion/
+      checklist-inspeccion-hu01.md
+      checklist-inspeccion-hu02.md
+      acta-inspeccion-hu01.md
+      acta-inspeccion-hu02.md
+      registro-acciones-correctivas.md
+
+    04-pruebas/
+      casos-prueba.md
+      resultados-pruebas.md
+      evidencias/
+
+    05-auditoria/
+      preauditoria-hu01.md
+      preauditoria-hu02.md
+      cumplimiento-global.md
+      validacion-independiente-pendiente.md
+
+    06-informes-finales/
+      informe-sqa-hu01.md
+      informe-sqa-hu02.md
+      informe-sqa-general.md
+
+    README-SQA.md
+
+La estructura puede adaptarse ligeramente si existe una razón técnica, pero todos los entregables deben estar presentes.
+
+No dejes documentos vacíos ni textos genéricos de relleno.
+
+# 12. INFORME FINAL POR HISTORIA DE USUARIO
+
+Esta es la parte más importante de la tarea.
+
+Genera dos documentos académicos independientes:
+
+**INFORME SQA — HU-01 REGISTRO DE PRODUCTOS**
+
+**INFORME SQA — HU-02 CONTROL DE EXISTENCIAS**
+
+Cada informe deberá contener:
+
+### 1. Datos generales
+- Universidad: campo editable.
+- Asignatura: campo editable.
+- Docente: campo editable.
+- Integrantes: campos editables.
+- Nombre del proyecto: StockFácil.
+- Historia de usuario evaluada.
+- Fecha: usar la fecha real de elaboración.
+
+### 2. Introducción
+Explicación breve del aseguramiento de calidad aplicado a la historia.
+
+### 3. Objetivo
+Indicar qué se pretende evaluar.
+
+### 4. Descripción de la historia
+Incluir la descripción y los criterios de aceptación.
+
+### 5. Artefactos relacionados
+Enumerar los archivos, vistas y componentes reales examinados.
+
+### 6. Evidencia de revisión
+Incluir la lista de verificación, los hallazgos y las acciones propuestas.
+
+### 7. Evidencia de inspección
+Incluir el checklist técnico, el acta, las observaciones y las capturas disponibles.
+
+### 8. Casos de prueba
+Presentar los casos pertinentes y sus resultados reales.
+
+### 9. Resultado de auditoría
+Incluir la matriz de conformidad, el porcentaje técnico preliminar y el estado de la validación independiente.
+
+### 10. Recomendaciones
+Plantear recomendaciones concretas según los resultados.
+
+### 11. Conclusiones
+Redactar conclusiones relacionadas con los criterios evaluados y las evidencias obtenidas.
+
+### 12. Anexos
+Incluir referencias a capturas, pruebas y archivos técnicos.
+
+No repetir el mismo texto genérico en ambos informes.
+
+Cada documento debe centrarse en las particularidades de su historia de usuario.
+
+# 13. INFORME GENERAL CONSOLIDADO
+
+Además de los dos informes independientes, genera un documento llamado:
+
+**INFORME GENERAL DE ASEGURAMIENTO DE LA CALIDAD — STOCKFÁCIL**
+
+Estructura:
+
+1. Portada académica.
+2. Introducción.
+3. Descripción breve del sistema.
+4. Objetivos de la actividad.
+5. Metodología SQA.
+6. Historias de usuario seleccionadas.
+7. Resumen de las revisiones.
+8. Resumen de las inspecciones.
+9. Resultados de las pruebas funcionales.
+10. Resultados técnicos preliminares de auditoría.
+11. Tabla comparativa HU-01 y HU-02.
+12. Hallazgos principales.
+13. Acciones correctivas.
+14. Recomendaciones.
+15. Conclusiones generales.
+16. Anexos y evidencias.
+
+Utilizar un lenguaje académico natural, claro y profesional.
+
+Evitar:
+
+- Párrafos repetitivos.
+- Expresiones exageradas.
+- Información inventada.
+- Afirmaciones sin evidencia.
+- Explicaciones innecesariamente extensas.
+
+Quiero una redacción de estudiante universitario, pero técnicamente correcta.
+
+# 14. PRESENTACIÓN DE LOS DOCUMENTOS
+
+Los informes deben estar bien organizados y ser fáciles de presentar.
+
+Utiliza:
+
+- Títulos claros.
+- Numeración coherente.
+- Tablas ordenadas.
+- Márgenes y espaciados adecuados.
+- Lenguaje formal y natural.
+- Formato visual consistente.
+
+Los documentos Markdown serán la fuente principal.
+
+Si el entorno dispone de herramientas compatibles para convertir los informes sin instalar dependencias complejas, genera también una versión final en PDF de los dos informes SQA y del informe consolidado.
+
+Si puedes generar Word editable sin complicar el entorno, también puedes hacerlo.
+
+No sacrifiques la calidad del contenido ni el funcionamiento del proyecto por generar archivos PDF o Word.
+
+Si no es posible exportarlos, deja los documentos Markdown completos y listos para conversión.
+
+# 15. VERIFICACIÓN FINAL
+
+Antes de terminar:
+
+1. Verifica que existan los dos informes por historia de usuario.
+2. Comprueba que ambos incluyan revisión, inspección y auditoría.
+3. Confirma que los criterios de aceptación sean evaluados.
+4. Verifica las referencias a los archivos reales.
+5. Revisa los resultados de pruebas.
+6. Comprueba que los porcentajes estén correctamente calculados.
+7. Verifica que no se inventaron participantes ni evidencias.
+8. Identifica los campos pendientes de evaluación por terceros.
+9. Comprueba que el sistema Laravel continúe funcionando.
+10. Revisa que los documentos no contengan contradicciones.
+
+# 16. RESULTADO FINAL QUE DEBES MOSTRARME
+
+Cuando termines, presenta:
+
+- Lista de documentos creados.
+- Ubicación exacta de los informes finales.
+- Resumen de HU-01.
+- Resumen de HU-02.
+- Resultados reales de las pruebas.
+- Porcentajes técnicos de cumplimiento, si son verificables.
+- Hallazgos detectados.
+- Correcciones realizadas.
+- Evidencias disponibles.
+- Evaluaciones o datos pendientes de completar por los equipos o docente.
+
+Aclara de manera sencilla qué debo entregar al docente y qué debo completar personalmente.
+
+NO finalices la tarea únicamente con una explicación.
+
+Debes generar los documentos reales dentro del proyecto.
+
+**Comienza inspeccionando el repositorio StockFácil y desarrolla los entregables completos de la actividad SQA.**

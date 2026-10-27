@@ -1,0 +1,18 @@
+PHPUnit 12.5.39 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.3.33
+Configuration: C:\Univalle\SQA\StockFácil\phpunit.xml
+
+E...........................................                      44 / 44 (100%)
+
+Time: 00:48.682, Memory: 58.00 MB
+
+There was 1 error:
+
+1) Tests\Unit\RegistrationDataTest::test_valid_registration_data_is_ready_to_create_a_user
+Error: Class "App\Domain\Users\RegistrationData" not found
+
+C:\Univalle\SQA\StockFácil\tests\Unit\RegistrationDataTest.php:12
+
+ERRORS!
+Tests: 44, Assertions: 286, Errors: 1.

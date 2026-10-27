@@ -1,0 +1,8 @@
+{
+    "php_version": "8.3.33",
+    "laravel_version": "13.35.0",
+    "connection": "sqlite",
+    "database_path": "C:\\Univalle\\SQA\\StockFácil\\database\\database.sqlite",
+    "cache_store": "file",
+    "config_cached": false
+}

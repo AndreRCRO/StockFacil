@@ -1,0 +1,9 @@
+{
+  "counts": {
+    "users": 1,
+    "products": 12,
+    "movements": 24
+  },
+  "logical_sha256": "c5bc85ce9a7dca05a7076ec8d7fabb0ca6d9ec0a7342055b73361d33b37ee9bd",
+  "matches_before": true
+}

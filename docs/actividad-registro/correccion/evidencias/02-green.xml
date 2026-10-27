@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Univalle\SQA\StockFácil\phpunit.xml" tests="4" assertions="27" errors="0" failures="0" skipped="0" time="0.425167">
+    <testsuite name="Feature" tests="4" assertions="27" errors="0" failures="0" skipped="0" time="0.425167">
+      <testsuite name="Tests\Feature\RegistrationWorkflowTest" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationWorkflowTest.php" tests="4" assertions="27" errors="0" failures="0" skipped="0" time="0.425167">
+        <testcase name="test_registration_contract_creates_one_account_and_allows_authentication" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationWorkflowTest.php" line="17" class="Tests\Feature\RegistrationWorkflowTest" classname="Tests.Feature.RegistrationWorkflowTest" assertions="16" time="0.367029"/>
+        <testcase name="test_registration_service_rejects_short_password_without_creating_user" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationWorkflowTest.php" line="38" class="Tests\Feature\RegistrationWorkflowTest" classname="Tests.Feature.RegistrationWorkflowTest" assertions="2" time="0.015713"/>
+        <testcase name="test_registration_service_rejects_invalid_name_and_email" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationWorkflowTest.php" line="49" class="Tests\Feature\RegistrationWorkflowTest" classname="Tests.Feature.RegistrationWorkflowTest" assertions="3" time="0.012642"/>
+        <testcase name="test_existing_noncanonical_email_cannot_be_registered_again" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationWorkflowTest.php" line="62" class="Tests\Feature\RegistrationWorkflowTest" classname="Tests.Feature.RegistrationWorkflowTest" assertions="6" time="0.029783"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

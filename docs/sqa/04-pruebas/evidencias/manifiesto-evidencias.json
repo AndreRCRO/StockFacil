@@ -1,0 +1,255 @@
+{
+  "scope": "Evidencias técnicas originales y posteriores de la actividad",
+  "files": [
+    {
+      "file": "baseline-inicial.json",
+      "bytes": 7391,
+      "sha256": "171207a6ca999c4a1b1885c22bc249d2100456c765c012cc102387dc8feae91f"
+    },
+    {
+      "file": "capturar-evidencias.cjs",
+      "bytes": 8200,
+      "sha256": "56d5607aed7ce32bcd94c903bfd481f94e52cb3aea9cf8cc7a203a4c9b1dab1a"
+    },
+    {
+      "file": "composer-salida.txt",
+      "bytes": 26,
+      "sha256": "617d39e3b4752168f63039991b7e1efaca11e54a1f5a9153d93b0d4efe91fe05"
+    },
+    {
+      "file": "consigna-original.txt",
+      "bytes": 22298,
+      "sha256": "50843eaf2dc524ce7ec0967fc9ca7cc42b6e41466b6c6bb9cfa1988a11d0b875"
+    },
+    {
+      "file": "correccion-navegador.txt",
+      "bytes": 74,
+      "sha256": "137dc4b55e0ccf27d52866cd50722b1adb154ca1ac793ef50e42b8e3c3eeff67"
+    },
+    {
+      "file": "cumplimiento-calculado.json",
+      "bytes": 873,
+      "sha256": "b29ccb0d36a1bb8543d62ae934fa5eada28f4d127e1b911379b65c13177ec1d2"
+    },
+    {
+      "file": "dashboard.png",
+      "bytes": 110675,
+      "sha256": "e37957c2b321d1190ee2975aa486cb191c49ed104a61e8bed91bdb6c191ddcbd"
+    },
+    {
+      "file": "exportacion-pdf.json",
+      "bytes": 514,
+      "sha256": "11036620f52927bdeffe269cd51908619ba0c8cd760d8a91bcc4b7dd1013ebfc"
+    },
+    {
+      "file": "fuentes-inspeccionadas.txt",
+      "bytes": 76840,
+      "sha256": "1d64f75d54e03f7b853faa3d472cfd0156e600c321a4890246974c0913db7192"
+    },
+    {
+      "file": "hu01-error-nombre.png",
+      "bytes": 39597,
+      "sha256": "7c6a6cdf48fbd50423eeb7cf31fe4318c8887244d0ac48faf833878323bbc5bf"
+    },
+    {
+      "file": "hu01-error-precio.png",
+      "bytes": 41162,
+      "sha256": "48c9bf25ed1ef779a812a712bbadf6575e358cdeb67575d49cc46afbee0e3193"
+    },
+    {
+      "file": "hu01-error-sku.png",
+      "bytes": 42069,
+      "sha256": "850541f7a02b7e519b620dc0f73adaea7be96bd31028ec02bd3fb1f7f9e26e4d"
+    },
+    {
+      "file": "hu01-error-stock-inicial.png",
+      "bytes": 41730,
+      "sha256": "d9fa89bdd7700404b555f98dd0ac8aa8fed1ad17b3646e1188d7d1ebd32654dd"
+    },
+    {
+      "file": "hu01-formulario.png",
+      "bytes": 37394,
+      "sha256": "e07f3c02aa47b72e1ce0013995162c0b169a8b011406f4ebb036ef00696fb6b2"
+    },
+    {
+      "file": "hu01-mensajes-validacion.png",
+      "bytes": 73943,
+      "sha256": "b4c0c9af32caf386a4b468adcd06d65241549899ddfd06bc6511e9c04e820013"
+    },
+    {
+      "file": "hu01-producto-listado.png",
+      "bytes": 35848,
+      "sha256": "9bc40bfd9579d983b733370c187f22c2c2944cadf287411bba1f904e9802ef13"
+    },
+    {
+      "file": "hu01-registro-exitoso.png",
+      "bytes": 101286,
+      "sha256": "cdc03cab9b04ce45eb06e6b6c547eba22dc87acef8961044cf1a6a43c4a94400"
+    },
+    {
+      "file": "hu02-alerta-minimo.png",
+      "bytes": 35493,
+      "sha256": "d1c8887647868966ebbd06a32ee6dad36fd237e9186f521ce9fdcb4f98fa22bf"
+    },
+    {
+      "file": "hu02-entrada-exitosa.png",
+      "bytes": 118855,
+      "sha256": "e446f04f7c04fa8f8f3df26e198eddc560dde5176ec65154421009a4686daf06"
+    },
+    {
+      "file": "hu02-error-cero-antes.png",
+      "bytes": 78513,
+      "sha256": "f9fb7afff9deec3000c6a458ca442213e34277dcf24ed5053fdd96fa15492832"
+    },
+    {
+      "file": "hu02-error-cero.png",
+      "bytes": 78474,
+      "sha256": "e08f1610e5252c78fa97bdd8f5a6e1d8866f7cb0aa870bedb38964abaf3f5c9a"
+    },
+    {
+      "file": "hu02-error-insuficiente.png",
+      "bytes": 81755,
+      "sha256": "dfab3108223b78b4019ae11d192dc7b95866ddb5e6bc10af6d29fe9e5a9802c3"
+    },
+    {
+      "file": "hu02-error-maximo.png",
+      "bytes": 85227,
+      "sha256": "b0609b6daf93ef4b5da4f0573ad08890837c0afc6924e04ecf2a7d2738da1688"
+    },
+    {
+      "file": "hu02-error-negativo-antes.png",
+      "bytes": 78400,
+      "sha256": "25ce80dbd6fb471f8a04bc6fb30dc482b1bc5ca351441ed5d7f840e69c01650c"
+    },
+    {
+      "file": "hu02-error-negativo.png",
+      "bytes": 78358,
+      "sha256": "f0bf0b311f4e81b9049b96c59afb9c9f9bf138f6abef44cfc5729f679e6bd466"
+    },
+    {
+      "file": "hu02-formulario-movimiento.png",
+      "bytes": 71109,
+      "sha256": "71c14dadcec58f37c54a507b3f1a39813a68362add3fb9b79f5c85ed2cb2146d"
+    },
+    {
+      "file": "hu02-historial.png",
+      "bytes": 62179,
+      "sha256": "e21bdb7eba0a61d4498c7b0837142ee69219d7bcc86b0815d70e0921d3a77ff5"
+    },
+    {
+      "file": "hu02-salida-exitosa.png",
+      "bytes": 120396,
+      "sha256": "158c1b00d4a5b3fcb44b702dab232da0431c4bd11b2da7ec076bfcd4b468cec5"
+    },
+    {
+      "file": "integridad-final.json",
+      "bytes": 689,
+      "sha256": "8b8c2c60efd9f29c2a7afc28be9dcd61e1a49cc5fea20cc86203a6f6fb2e91b2"
+    },
+    {
+      "file": "navegador-salida.txt",
+      "bytes": 1114,
+      "sha256": "944138268784860b089ebba2eca60f76c53f8e59c7f70311bca2bb7e9d386db8"
+    },
+    {
+      "file": "phpunit-antes.txt",
+      "bytes": 8133,
+      "sha256": "144b5f99b6b9653a3ee961bc10f220668cf098b07a076d067848485b9ae99ae9"
+    },
+    {
+      "file": "phpunit-antes.xml",
+      "bytes": 12880,
+      "sha256": "d271ae3b9200cb0975c113e6c6f7ab0d5a2827d7c2c473e99f00f9cad83fb19f"
+    },
+    {
+      "file": "phpunit-junit.xml",
+      "bytes": 13145,
+      "sha256": "49500130febab139cb0ab1da1b8e5505a38ef1be55fdd77a9ecdefb5081a9bab"
+    },
+    {
+      "file": "phpunit-salida.txt",
+      "bytes": 8309,
+      "sha256": "7e0a12eb60d900522a6bf46ffbb51beda43c669261a61a97692652c9598c8356"
+    },
+    {
+      "file": "pint-salida.txt",
+      "bytes": 35,
+      "sha256": "acbf5da6385237b6f4cd342c4454d93f6c4df8bfcf1687838edb3b651981c4e1"
+    },
+    {
+      "file": "preparacion-navegador.txt",
+      "bytes": 954,
+      "sha256": "1af5ee2e5c8a12ab0379b550423a1e433b0bc297676d49d062f9d82685d30f03"
+    },
+    {
+      "file": "qa-pdf.json",
+      "bytes": 1004,
+      "sha256": "76a5bd70ab5ea4f3bd42fff2e07f9b517ad08869e1068666f33a9c5a8af2e1be"
+    },
+    {
+      "file": "referencias-codigo.json",
+      "bytes": 4014,
+      "sha256": "2fd0e7784fa8b61e8392d826406a44d7fbdbe51fd342a5119b39a9a99b34dc46"
+    },
+    {
+      "file": "regresion-antes.txt",
+      "bytes": 5112,
+      "sha256": "6b9589d889f6ed530e2befc3fc9883712d683128178a81e904233da8a9e2b89b"
+    },
+    {
+      "file": "regresion-antes.xml",
+      "bytes": 4808,
+      "sha256": "0eceb5bcd28349b1a5a564e41563a1ad53c6de996ed654b64f68ed4a2beeb808"
+    },
+    {
+      "file": "regresion-preparacion-error.txt",
+      "bytes": 5021,
+      "sha256": "da07443ec78f125c25e4c09491fa5a332682688685b920e8b80c7f4a9e9e8420"
+    },
+    {
+      "file": "regresion-preparacion-error.xml",
+      "bytes": 3767,
+      "sha256": "a455897ccf4e5021a2916f1de7c5853c7552f79a90341618287849064d7e7f93"
+    },
+    {
+      "file": "resultados-navegador-antes.json",
+      "bytes": 4360,
+      "sha256": "552e062416075eaae9af47349770b22e91fa887abaee2866466bbe8361004c79"
+    },
+    {
+      "file": "resultados-navegador.json",
+      "bytes": 4474,
+      "sha256": "cdc0ac45517c3bf1f324d6fcd0a8c3c6ea37b806d75a8f8ee80a6ff1ec86d760"
+    },
+    {
+      "file": "revalidacion-correccion.json",
+      "bytes": 831,
+      "sha256": "b0b01e875d421d04d5c367fe7d8351b45cde216b4588772e146ce43555ea6dfb"
+    },
+    {
+      "file": "rutas.json",
+      "bytes": 2687,
+      "sha256": "1b341d9299037211bfed5a793abadfb0864c914cae5c50368e7ffd5c83593705"
+    },
+    {
+      "file": "sistema-final-http.txt",
+      "bytes": 5,
+      "sha256": "74234df06346be5b8fcd66762a3d7b105d9946191845a22fc531097e7e68565c"
+    },
+    {
+      "file": "sqlite-navegador.json",
+      "bytes": 1178,
+      "sha256": "36f73abbf5535e6fe13f7e0e386bfe73d6c969dd4239f95f51b85f58096f1f47"
+    },
+    {
+      "file": "verificacion-final.json",
+      "bytes": 1384,
+      "sha256": "566e62481d0c4c56b8b4c74cd6639ec422f3519c3714a71b7627b6808140bba3"
+    },
+    {
+      "file": "verificar-correccion.cjs",
+      "bytes": 3357,
+      "sha256": "43dd302d3ffba586a8675b19778f162697ec2e3e78ef88121237b91c36d182b9"
+    }
+  ]
+}

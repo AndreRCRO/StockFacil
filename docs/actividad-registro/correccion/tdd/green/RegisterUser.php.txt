@@ -1,0 +1,39 @@
+<?php
+
+namespace App\Services;
+
+use App\Domain\Users\RegistrationData;
+use App\Models\User;
+use Closure;
+use Illuminate\Database\UniqueConstraintViolationException;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\ValidationException;
+
+class RegisterUser
+{
+    public function register(RegistrationData $data): User
+    {
+        Validator::make(
+            ['name' => $data->name, 'email' => $data->email, 'password' => $data->password],
+            [
+                'name' => ['required', 'string', 'max:120'],
+                'email' => ['bail', 'required', 'string', 'email', 'max:255', function (string $attribute, mixed $value, Closure $fail): void {
+                    if (User::query()->whereRaw('LOWER(TRIM(email)) = ?', [$value])->exists()) {
+                        $fail('Este correo electrónico ya está registrado.');
+                    }
+                }],
+                'password' => ['bail', 'required', 'string', 'min:8', function (string $attribute, mixed $value, Closure $fail): void {
+                    if (strlen($value) > 72) {
+                        $fail('La contraseña no debe superar 72 bytes.');
+                    }
+                }],
+            ],
+        )->validate();
+
+        try {
+            return User::create(['name' => $data->name, 'email' => $data->email, 'password' => $data->password]);
+        } catch (UniqueConstraintViolationException) {
+            throw ValidationException::withMessages(['email' => 'Este correo electrónico ya está registrado.']);
+        }
+    }
+}

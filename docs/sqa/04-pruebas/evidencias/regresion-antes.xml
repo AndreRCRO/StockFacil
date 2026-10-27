@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Univalle\SQA\StockFácil\phpunit.xml" tests="8" assertions="32" errors="0" failures="3" skipped="0" time="1.143410">
+    <testsuite name="Feature" tests="8" assertions="32" errors="0" failures="3" skipped="0" time="1.143410">
+      <testsuite name="Tests\Feature\InventoryTest" file="C:\Univalle\SQA\StockFácil\tests\Feature\InventoryTest.php" tests="8" assertions="32" errors="0" failures="3" skipped="0" time="1.143410">
+        <testsuite name="Tests\Feature\InventoryTest::test_invalid_movement_is_rejected" tests="8" assertions="32" errors="0" failures="3" skipped="0" time="1.143410">
+          <testcase name="test_invalid_movement_is_rejected with data set #0" file="C:\Univalle\SQA\StockFácil\tests\Feature\InventoryTest.php" line="72" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="4" time="0.857690">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\InventoryTest::test_invalid_movement_is_rejected with data set #0&#13;
+Failed asserting that an array contains 'La cantidad debe ser mayor o igual a 1.'.&#13;
+&#13;
+The following errors occurred during the last request:
+
+El cantidad debe ser mayor o igual a 1.
+&#13;
+C:\Univalle\SQA\StockFácil\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:46
+C:\Univalle\SQA\StockFácil\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:1716
+C:\Univalle\SQA\StockFácil\tests\Feature\InventoryTest.php:77</failure>
+          </testcase>
+          <testcase name="test_invalid_movement_is_rejected with data set #1" file="C:\Univalle\SQA\StockFácil\tests\Feature\InventoryTest.php" line="72" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="4" time="0.042820">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\InventoryTest::test_invalid_movement_is_rejected with data set #1&#13;
+Failed asserting that an array contains 'La cantidad debe ser mayor o igual a 1.'.&#13;
+&#13;
+The following errors occurred during the last request:
+
+El cantidad debe ser mayor o igual a 1.
+&#13;
+C:\Univalle\SQA\StockFácil\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:46
+C:\Univalle\SQA\StockFácil\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:1716
+C:\Univalle\SQA\StockFácil\tests\Feature\InventoryTest.php:77</failure>
+          </testcase>
+          <testcase name="test_invalid_movement_is_rejected with data set #2" file="C:\Univalle\SQA\StockFácil\tests\Feature\InventoryTest.php" line="72" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="4" time="0.045035"/>
+          <testcase name="test_invalid_movement_is_rejected with data set #3" file="C:\Univalle\SQA\StockFácil\tests\Feature\InventoryTest.php" line="72" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="4" time="0.041064"/>
+          <testcase name="test_invalid_movement_is_rejected with data set #4" file="C:\Univalle\SQA\StockFácil\tests\Feature\InventoryTest.php" line="72" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="4" time="0.040354"/>
+          <testcase name="test_invalid_movement_is_rejected with data set #5" file="C:\Univalle\SQA\StockFácil\tests\Feature\InventoryTest.php" line="72" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="4" time="0.038012"/>
+          <testcase name="test_invalid_movement_is_rejected with data set #6" file="C:\Univalle\SQA\StockFácil\tests\Feature\InventoryTest.php" line="72" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="4" time="0.037232"/>
+          <testcase name="test_invalid_movement_is_rejected with data set #7" file="C:\Univalle\SQA\StockFácil\tests\Feature\InventoryTest.php" line="72" class="Tests\Feature\InventoryTest" classname="Tests.Feature.InventoryTest" assertions="4" time="0.041203">
+            <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\InventoryTest::test_invalid_movement_is_rejected with data set #7&#13;
+Failed asserting that an array contains 'La cantidad no debe superar 2147483647.'.&#13;
+&#13;
+The following errors occurred during the last request:
+
+El cantidad no debe superar 2147483647.
+&#13;
+C:\Univalle\SQA\StockFácil\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:46
+C:\Univalle\SQA\StockFácil\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:1716
+C:\Univalle\SQA\StockFácil\tests\Feature\InventoryTest.php:80</failure>
+          </testcase>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,44 @@
+<?php
+
+namespace App\Http\Requests;
+
+use Closure;
+use Illuminate\Foundation\Http\FormRequest;
+
+class RegisterRequest extends FormRequest
+{
+    public function authorize(): bool
+    {
+        return true;
+    }
+
+    protected function prepareForValidation(): void
+    {
+        if (is_string($this->input('email'))) {
+            $this->merge(['email' => mb_strtolower(trim($this->input('email')))]);
+        }
+    }
+
+    public function rules(): array
+    {
+        return [
+            'name' => ['required', 'string', 'max:120'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users,email'],
+            'password' => ['bail', 'required', 'string', 'min:8', 'confirmed', function (string $attribute, mixed $value, Closure $fail): void {
+                if (strlen($value) > 72) {
+                    $fail('La contraseña no debe superar 72 bytes.');
+                }
+            }],
+        ];
+    }
+
+    public function attributes(): array
+    {
+        return ['name' => 'nombre', 'email' => 'correo electrónico', 'password' => 'contraseña'];
+    }
+
+    public function messages(): array
+    {
+        return ['email.unique' => 'Este correo electrónico ya está registrado.', 'password.min' => 'La contraseña debe tener al menos 8 caracteres.', 'password.confirmed' => 'La confirmación de la contraseña no coincide.'];
+    }
+}

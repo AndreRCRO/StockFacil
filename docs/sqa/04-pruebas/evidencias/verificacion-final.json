@@ -1,0 +1,36 @@
+{
+  "markdown_documents": 21,
+  "story_report_sections": 12,
+  "general_report_sections": 16,
+  "source_references": 29,
+  "markdown_links_valid": true,
+  "percentages": "HU-01 6/6; HU-02 6/6; global 12/12 = 100% técnico",
+  "independent_validation": "Pendiente",
+  "development_inventory_unchanged": true,
+  "pdfs": [
+    {
+      "file": "output/pdf/informe-sqa-general.pdf",
+      "pages": 8,
+      "sha256": "29d5711275590dc45703a9b5e46cce551fac6a615e0cbd71072b588ebb0ccdef",
+      "link_annotations": 23,
+      "outside": [],
+      "visual_review": "Páginas renderizadas con Poppler y revisadas; tablas corregidas y nueva renderización verificada."
+    },
+    {
+      "file": "output/pdf/informe-sqa-hu01.pdf",
+      "pages": 12,
+      "sha256": "90d69e330efec60e89e0021cfc56a05917b78e21f8ef1426bee2608cc52c13bf",
+      "link_annotations": 20,
+      "outside": [],
+      "visual_review": "Páginas renderizadas con Poppler y revisadas; tablas corregidas y nueva renderización verificada."
+    },
+    {
+      "file": "output/pdf/informe-sqa-hu02.pdf",
+      "pages": 13,
+      "sha256": "5449efc686f152fcaf151b9d1d6c6e7f86b3c7a93887ff92e0402998f7611624",
+      "link_annotations": 24,
+      "outside": [],
+      "visual_review": "Páginas renderizadas con Poppler y revisadas; tablas corregidas y nueva renderización verificada."
+    }
+  ]
+}

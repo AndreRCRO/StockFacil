@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Univalle\SQA\StockFácil\phpunit.xml" tests="7" assertions="71" errors="0" failures="0" skipped="0" time="2.856266">
+    <testsuite name="Unit" tests="2" assertions="5" errors="0" failures="0" skipped="0" time="0.008187">
+      <testsuite name="Tests\Unit\RegistrationDataTest" file="C:\Univalle\SQA\StockFácil\tests\Unit\RegistrationDataTest.php" tests="2" assertions="5" errors="0" failures="0" skipped="0" time="0.008187">
+        <testcase name="test_valid_registration_data_is_ready_to_create_a_user" file="C:\Univalle\SQA\StockFácil\tests\Unit\RegistrationDataTest.php" line="10" class="Tests\Unit\RegistrationDataTest" classname="Tests.Unit.RegistrationDataTest" assertions="3" time="0.005093"/>
+        <testcase name="test_registration_normalizes_name_and_email" file="C:\Univalle\SQA\StockFácil\tests\Unit\RegistrationDataTest.php" line="19" class="Tests\Unit\RegistrationDataTest" classname="Tests.Unit.RegistrationDataTest" assertions="2" time="0.003093"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="5" assertions="66" errors="0" failures="0" skipped="0" time="2.848079">
+      <testsuite name="Tests\Feature\RegistrationTest" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationTest.php" tests="5" assertions="66" errors="0" failures="0" skipped="0" time="2.848079">
+        <testcase name="test_valid_registration_persists_hashed_password_and_allows_login" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationTest.php" line="19" class="Tests\Feature\RegistrationTest" classname="Tests.Feature.RegistrationTest" assertions="14" time="2.362885"/>
+        <testcase name="test_duplicate_email_is_rejected_case_insensitively" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationTest.php" line="32" class="Tests\Feature\RegistrationTest" classname="Tests.Feature.RegistrationTest" assertions="5" time="0.108012"/>
+        <testcase name="test_invalid_inputs_are_rejected_without_persisting_users" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationTest.php" line="39" class="Tests\Feature\RegistrationTest" classname="Tests.Feature.RegistrationTest" assertions="35" time="0.260751"/>
+        <testcase name="test_email_is_normalized_and_password_is_not_flushed_to_old_input" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationTest.php" line="48" class="Tests\Feature\RegistrationTest" classname="Tests.Feature.RegistrationTest" assertions="7" time="0.063323"/>
+        <testcase name="test_authenticated_user_cannot_register_another_account" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationTest.php" line="55" class="Tests\Feature\RegistrationTest" classname="Tests.Feature.RegistrationTest" assertions="5" time="0.053108"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

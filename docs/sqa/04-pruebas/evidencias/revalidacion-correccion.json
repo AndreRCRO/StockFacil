@@ -1,0 +1,33 @@
+{
+  "finding": "HR-04",
+  "cases": [
+    {
+      "id": "CP-11",
+      "status": "aprobado",
+      "quantity": 0,
+      "message": "La cantidad debe ser mayor o igual a 1.",
+      "stock": 3,
+      "evidence": "hu02-error-cero.png",
+      "recorded_at": "2026-10-13T06:29:33.277Z"
+    },
+    {
+      "id": "CP-12",
+      "status": "aprobado",
+      "quantity": -1,
+      "message": "La cantidad debe ser mayor o igual a 1.",
+      "stock": 3,
+      "evidence": "hu02-error-negativo.png",
+      "recorded_at": "2026-10-13T06:29:35.625Z"
+    },
+    {
+      "id": "REG-MAX",
+      "status": "aprobado",
+      "quantity": 2147483648,
+      "message": "La cantidad no debe superar 2147483647.",
+      "stock": 3,
+      "evidence": "hu02-error-maximo.png",
+      "recorded_at": "2026-10-13T06:29:37.999Z"
+    }
+  ],
+  "history_count": 3
+}

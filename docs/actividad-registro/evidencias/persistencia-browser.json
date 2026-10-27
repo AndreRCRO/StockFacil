@@ -1,0 +1,19 @@
+{
+  "registered_test_users": [
+    {
+      "name": "Ana SQA",
+      "email": "ana.sqa@example.test",
+      "bcrypt_hash": true,
+      "plaintext_password_stored": false
+    },
+    {
+      "name": "Ana SQA",
+      "email": "beatriz.sqa@example.test",
+      "bcrypt_hash": true,
+      "plaintext_password_stored": false
+    }
+  ],
+  "invalid_test_account_count": 0,
+  "products": 12,
+  "movements": 24
+}

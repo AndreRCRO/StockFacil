@@ -1,0 +1,107 @@
+{
+  "base": "http://127.0.0.1:8005",
+  "phase": "inicial",
+  "email": "ana.sqa@example.test",
+  "jsErrors": [],
+  "results": [
+    {
+      "id": "REG-01",
+      "expected": "Crear cuenta válida y mostrar confirmación en login",
+      "observed": "Cuenta creada correctamente. Ya puedes iniciar sesión.",
+      "status": "aprobado",
+      "at": "2026-10-19T19:23:10.959Z",
+      "url": "http://127.0.0.1:8005/login",
+      "image": "inicial-REG-01.png"
+    },
+    {
+      "id": "REG-02",
+      "expected": "Rechazar correo duplicado incluso con mayúsculas y espacios",
+      "observed": "Este correo electrónico ya está registrado. Contraseña no recuperada en formulario.",
+      "status": "aprobado",
+      "at": "2026-10-19T19:23:14.620Z",
+      "url": "http://127.0.0.1:8005/register",
+      "image": "inicial-REG-02.png"
+    },
+    {
+      "id": "REG-03",
+      "expected": "Rechazar formato de correo inválido",
+      "observed": "Ingresa un correo electrónico válido.",
+      "status": "aprobado",
+      "at": "2026-10-19T19:23:17.105Z",
+      "url": "http://127.0.0.1:8005/register",
+      "image": "inicial-REG-03.png"
+    },
+    {
+      "id": "REG-04",
+      "expected": "Rechazar contraseña de 7 caracteres",
+      "observed": "La contraseña debe tener al menos 8 caracteres.",
+      "status": "aprobado",
+      "at": "2026-10-19T19:23:19.292Z",
+      "url": "http://127.0.0.1:8005/register",
+      "image": "inicial-REG-04.png"
+    },
+    {
+      "id": "REG-05",
+      "expected": "Rechazar confirmación distinta",
+      "observed": "La confirmación de la contraseña no coincide.",
+      "status": "aprobado",
+      "at": "2026-10-19T19:23:21.725Z",
+      "url": "http://127.0.0.1:8005/register",
+      "image": "inicial-REG-05.png"
+    },
+    {
+      "id": "REG-06",
+      "expected": "Rechazar nombre vacío",
+      "observed": "El campo nombre es obligatorio.",
+      "status": "aprobado",
+      "at": "2026-10-19T19:23:24.208Z",
+      "url": "http://127.0.0.1:8005/register",
+      "image": "inicial-REG-06.png"
+    },
+    {
+      "id": "REG-07",
+      "expected": "Rechazar contraseña superior a 72 bytes",
+      "observed": "La contraseña no debe superar 72 bytes.",
+      "status": "aprobado",
+      "at": "2026-10-19T19:23:26.516Z",
+      "url": "http://127.0.0.1:8005/register",
+      "image": "inicial-REG-07.png"
+    },
+    {
+      "id": "REG-08",
+      "expected": "Rechazar POST sin token CSRF con HTTP 419",
+      "observed": "POST real sin token: HTTP 419; ningún registro aceptado.",
+      "status": "aprobado",
+      "at": "2026-10-19T19:23:28.860Z",
+      "url": "http://127.0.0.1:8005/register",
+      "image": "inicial-REG-08.png"
+    },
+    {
+      "id": "REG-09",
+      "expected": "Iniciar sesión con el correo registrado en mayúsculas",
+      "observed": "No accedió al dashboard: Revisa los datos antes de guardar.\nEl correo o la contraseña no son correctos.",
+      "status": "fallido",
+      "at": "2026-10-19T19:23:30.019Z",
+      "url": "http://127.0.0.1:8005/login",
+      "image": "inicial-REG-09.png"
+    },
+    {
+      "id": "REG-10",
+      "expected": "Formulario móvil sin desbordamiento horizontal",
+      "observed": "Formulario legible a 390 px; sin desbordamiento horizontal.",
+      "status": "aprobado",
+      "at": "2026-10-19T19:23:32.522Z",
+      "url": "http://127.0.0.1:8005/register",
+      "image": "inicial-REG-10.png"
+    },
+    {
+      "id": "REG-11",
+      "expected": "Login normal y bloqueo de registro para usuario autenticado",
+      "observed": "Usuario autenticado redirigido al dashboard; no puede registrar otra cuenta.",
+      "status": "aprobado",
+      "at": "2026-10-19T19:23:33.117Z",
+      "url": "http://127.0.0.1:8005/dashboard",
+      "image": "inicial-REG-11.png"
+    }
+  ]
+}

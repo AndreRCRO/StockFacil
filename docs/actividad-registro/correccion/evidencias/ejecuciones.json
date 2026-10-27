@@ -1,0 +1,57 @@
+{
+  "initial_command": "php vendor/phpunit/phpunit/phpunit --colors=never --do-not-cache-result",
+  "initial_summary": "52 tests, 378 assertions, 0 errors, 0 failures",
+  "execution_environment_note": "La primera invocación restringida no pudo leer vendor/autoload.php. Las pruebas registradas se ejecutaron con autorización fuera del aislamiento, usando phpunit.xml con SQLite en memoria.",
+  "runs": [
+    {
+      "phase": "01-red",
+      "command": "php vendor/phpunit/phpunit/phpunit --colors=never --do-not-cache-result --filter RegistrationWorkflowTest --log-junit docs/actividad-registro/correccion/evidencias/01-red.xml",
+      "exit_code": 1,
+      "tests": 4,
+      "assertions": 20,
+      "errors": 0,
+      "failures": 3,
+      "output_last_written_utc": "2026-10-20T01:40:38.570470+00:00"
+    },
+    {
+      "phase": "02-green",
+      "command": "php vendor/phpunit/phpunit/phpunit --colors=never --do-not-cache-result --filter RegistrationWorkflowTest --log-junit docs/actividad-registro/correccion/evidencias/02-green.xml",
+      "exit_code": 0,
+      "tests": 4,
+      "assertions": 27,
+      "errors": 0,
+      "failures": 0,
+      "output_last_written_utc": "2026-10-20T01:41:16.638839+00:00"
+    },
+    {
+      "phase": "03-refactor",
+      "command": "php vendor/phpunit/phpunit/phpunit --colors=never --do-not-cache-result --filter RegistrationWorkflowTest --log-junit docs/actividad-registro/correccion/evidencias/03-refactor.xml",
+      "exit_code": 0,
+      "tests": 4,
+      "assertions": 27,
+      "errors": 0,
+      "failures": 0,
+      "output_last_written_utc": "2026-10-20T01:42:05.507560+00:00"
+    },
+    {
+      "phase": "03-refactor-final",
+      "command": "php vendor/phpunit/phpunit/phpunit --colors=never --do-not-cache-result --filter RegistrationWorkflowTest --log-junit docs/actividad-registro/correccion/evidencias/03-refactor-final.xml",
+      "exit_code": 0,
+      "tests": 4,
+      "assertions": 27,
+      "errors": 0,
+      "failures": 0,
+      "output_last_written_utc": "2026-10-20T01:51:23.379563+00:00"
+    },
+    {
+      "phase": "04-suite-final",
+      "command": "php vendor/phpunit/phpunit/phpunit --colors=never --do-not-cache-result --log-junit docs/actividad-registro/correccion/evidencias/04-suite-final.xml",
+      "exit_code": 0,
+      "tests": 60,
+      "assertions": 419,
+      "errors": 0,
+      "failures": 0,
+      "output_last_written_utc": "2026-10-20T01:42:49.174690+00:00"
+    }
+  ]
+}

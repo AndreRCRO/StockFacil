@@ -1,0 +1,18 @@
+{
+  "development_database_unchanged": true,
+  "logical_sha256": "43088fc4d879e3dbd370cb940c62f9118040fb5d82ee6d59f46185ffd44d9698",
+  "source_changes": [
+    {
+      "file": "app/Http/Requests/MovementRequest.php",
+      "before": "d0ad5afc693605d98288b3966719f9fa9f292881ffcf30b69c1c4076a75a036c",
+      "after": "ceffdf86a632344948cefa8940606dd569b1e5febe1730c5e4e6e92c1b9cec0a"
+    },
+    {
+      "file": "tests/Feature/InventoryTest.php",
+      "before": "f36fb5091c629f2e63cd49eff8220f2b6710f789090227a9bb5a7d111457737f",
+      "after": "c1c0fbf86bf8d0a958859fac5a475b7704b6f372a795f6743727d59437e67cbc"
+    }
+  ],
+  "temporary_stock": 3,
+  "temporary_movements": 3
+}

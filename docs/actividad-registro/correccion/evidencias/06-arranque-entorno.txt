@@ -1,0 +1,14 @@
+browserType.launch: Executable doesn't exist at C:\Users\andre\AppData\Local\Packages\sandbox.{ecfad5dd-cedd-46ba-bc0c-40aefdbe535d}\AC\ms-playwright\chromium_headless_shell-1234\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+    at C:\Univalle\SQA\StockFácil\docs\actividad-registro\correccion\evidencias\capturar-registro.cjs:12:36
+    at Object.<anonymous> (C:\Univalle\SQA\StockFácil\docs\actividad-registro\correccion\evidencias\capturar-registro.cjs:117:3) {
+  log: [],
+  name: 'Error'
+}

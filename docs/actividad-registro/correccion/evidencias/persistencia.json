@@ -1,0 +1,10 @@
+{
+  "new_test_accounts": 1,
+  "email": "beatriz.sqa@example.test",
+  "password_is_bcrypt": true,
+  "plaintext_password_stored": false,
+  "invalid_accounts": 0,
+  "total_users": 2,
+  "products": 12,
+  "movements": 24
+}

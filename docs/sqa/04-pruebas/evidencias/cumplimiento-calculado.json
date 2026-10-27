@@ -1,0 +1,48 @@
+{
+  "scope": "Doce CA de HU-01 y HU-02; preevaluación técnica, no aprobación oficial",
+  "stories": {
+    "HU-01": {
+      "applicable": 6,
+      "compliant": 6,
+      "unverified": 0,
+      "not_applicable": 0,
+      "results": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "percent": 100.0
+    },
+    "HU-02": {
+      "applicable": 6,
+      "compliant": 6,
+      "unverified": 0,
+      "not_applicable": 0,
+      "results": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "percent": 100.0
+    }
+  },
+  "global": {
+    "compliant": 12,
+    "applicable": 12,
+    "percent": 100.0,
+    "unverified": 0
+  },
+  "suite": {
+    "tests": 43,
+    "assertions": 286,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0
+  }
+}

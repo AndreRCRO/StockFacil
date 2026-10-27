@@ -1,0 +1,11 @@
+REG-01 aprobado: Cuenta creada correctamente. Ya puedes iniciar sesión.
+REG-02 aprobado: Este correo electrónico ya está registrado. Contraseña no recuperada en formulario.
+REG-03 aprobado: Ingresa un correo electrónico válido.
+REG-04 aprobado: La contraseña debe tener al menos 8 caracteres.
+REG-05 aprobado: La confirmación de la contraseña no coincide.
+REG-06 aprobado: El campo nombre es obligatorio.
+REG-07 aprobado: La contraseña no debe superar 72 bytes.
+REG-08 aprobado: POST real sin token: HTTP 419; ningún registro aceptado.
+REG-09 aprobado: Dashboard accesible con el correo en mayúsculas.
+REG-10 aprobado: Formulario legible a 390 px; sin desbordamiento horizontal.
+REG-11 aprobado: Usuario autenticado redirigido al dashboard; no puede registrar otra cuenta.

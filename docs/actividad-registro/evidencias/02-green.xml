@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Univalle\SQA\StockFácil\phpunit.xml" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.004073">
+    <testsuite name="Unit" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.004073">
+      <testsuite name="Tests\Unit\RegistrationDataTest" file="C:\Univalle\SQA\StockFácil\tests\Unit\RegistrationDataTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.004073">
+        <testcase name="test_valid_registration_data_is_ready_to_create_a_user" file="C:\Univalle\SQA\StockFácil\tests\Unit\RegistrationDataTest.php" line="10" class="Tests\Unit\RegistrationDataTest" classname="Tests.Unit.RegistrationDataTest" assertions="3" time="0.004073"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

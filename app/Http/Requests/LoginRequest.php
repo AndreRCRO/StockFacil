@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Http\Requests;
+
+use App\Support\EmailNormalizer;
+use Illuminate\Foundation\Http\FormRequest;
+
+class LoginRequest extends FormRequest
+{
+    public function authorize(): bool
+    {
+        return true;
+    }
+
+    protected function prepareForValidation(): void
+    {
+        if (is_string($this->input('email'))) {
+            $this->merge(['email' => EmailNormalizer::normalize($this->input('email'))]);
+        }
+    }
+
+    public function rules(): array
+    {
+        return ['email' => ['required', 'email', 'max:255'], 'password' => ['required', 'string', 'max:255']];
+    }
+
+    public function attributes(): array
+    {
+        return ['email' => 'correo electrónico', 'password' => 'contraseña'];
+    }
+}

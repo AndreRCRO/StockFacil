@@ -1,0 +1,147 @@
+{
+  "P1": {
+    "file": "app/Http/Requests/ProductRequest.php",
+    "method": "ProductRequest::rules",
+    "line": 23
+  },
+  "P2": {
+    "file": "app/Http/Controllers/ProductController.php",
+    "method": "ProductController::store",
+    "line": 37
+  },
+  "P3": {
+    "file": "app/Http/Controllers/ProductController.php",
+    "method": "ProductController::index",
+    "line": 16
+  },
+  "P4": {
+    "file": "app/Services/InventoryService.php",
+    "method": "InventoryService::createProduct",
+    "line": 13
+  },
+  "P5": {
+    "file": "resources/views/products/form.blade.php",
+    "method": "Formulario Blade de creación y edición",
+    "line": 3
+  },
+  "P6": {
+    "file": "resources/views/products/index.blade.php",
+    "method": "Listado Blade paginado",
+    "line": 11
+  },
+  "P7": {
+    "file": "database/migrations/2026_10_13_000001_create_inventory_tables.php",
+    "method": "Migración: productos y restricciones SQLite",
+    "line": 17
+  },
+  "P8": {
+    "file": "app/Models/Product.php",
+    "method": "Product::category / movements / casts",
+    "line": 17
+  },
+  "M1": {
+    "file": "app/Http/Requests/MovementRequest.php",
+    "method": "MovementRequest::rules",
+    "line": 17
+  },
+  "M2": {
+    "file": "app/Services/InventoryService.php",
+    "method": "InventoryService::record",
+    "line": 31
+  },
+  "M3": {
+    "file": "app/Http/Controllers/MovementController.php",
+    "method": "MovementController::store",
+    "line": 34
+  },
+  "M4": {
+    "file": "app/Http/Controllers/MovementController.php",
+    "method": "MovementController::index",
+    "line": 16
+  },
+  "M5": {
+    "file": "app/Models/Movement.php",
+    "method": "Movement: atributos, casts y relaciones",
+    "line": 16
+  },
+  "M6": {
+    "file": "resources/views/movements/form.blade.php",
+    "method": "Formulario Blade de movimientos",
+    "line": 4
+  },
+  "M7": {
+    "file": "resources/views/movements/index.blade.php",
+    "method": "Historial Blade",
+    "line": 4
+  },
+  "M8": {
+    "file": "app/Models/Product.php",
+    "method": "Product::scopeLowStock / getStockStatusAttribute",
+    "line": 37
+  },
+  "M9": {
+    "file": "resources/views/products/low-stock.blade.php",
+    "method": "Listado Blade de alertas",
+    "line": 4
+  },
+  "M10": {
+    "file": "app/Http/Requests/MovementRequest.php",
+    "method": "MovementRequest::messages, corrección HR-04",
+    "line": 32
+  },
+  "C1": {
+    "file": "resources/views/components/field.blade.php",
+    "method": "Componente: etiqueta, ayuda y error del campo",
+    "line": 6
+  },
+  "C2": {
+    "file": "resources/views/components/flash.blade.php",
+    "method": "Componente: resumen de errores y confirmación",
+    "line": 4
+  },
+  "C3": {
+    "file": "lang/es/validation.php",
+    "method": "Mensajes de validación en español",
+    "line": 4
+  },
+  "C4": {
+    "file": "bootstrap/app.php",
+    "method": "Respuesta de validación: recuperación segura de campos escalares",
+    "line": 19
+  },
+  "A1": {
+    "file": "routes/web.php",
+    "method": "Grupo de rutas protegido por auth",
+    "line": 14
+  },
+  "B1": {
+    "file": "config/database.php",
+    "method": "Conexión SQLite, WAL y espera de escritura",
+    "line": 6
+  },
+  "T1": {
+    "file": "tests/Feature/ProductTest.php",
+    "method": "ProductTest: registro válido, invalidaciones y listado",
+    "line": 34
+  },
+  "T2": {
+    "file": "tests/Feature/InventoryTest.php",
+    "method": "InventoryTest: entradas, salidas, alertas y rollback",
+    "line": 39
+  },
+  "T3": {
+    "file": "tests/Feature/ConcurrencyTest.php",
+    "method": "ConcurrencyTest: dos procesos sobre SQLite temporal",
+    "line": 14
+  },
+  "T4": {
+    "file": "tests/Feature/AuthenticationTest.php",
+    "method": "AuthenticationTest: rutas internas protegidas",
+    "line": 14
+  },
+  "T5": {
+    "file": "phpunit.xml",
+    "method": "SQLite de pruebas en memoria",
+    "line": 24
+  }
+}

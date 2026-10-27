@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Univalle\SQA\StockFácil\phpunit.xml" tests="4" assertions="20" errors="0" failures="3" skipped="0" time="0.483679">
+    <testsuite name="Feature" tests="4" assertions="20" errors="0" failures="3" skipped="0" time="0.483679">
+      <testsuite name="Tests\Feature\RegistrationWorkflowTest" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationWorkflowTest.php" tests="4" assertions="20" errors="0" failures="3" skipped="0" time="0.483679">
+        <testcase name="test_registration_contract_creates_one_account_and_allows_authentication" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationWorkflowTest.php" line="17" class="Tests\Feature\RegistrationWorkflowTest" classname="Tests.Feature.RegistrationWorkflowTest" assertions="16" time="0.343519"/>
+        <testcase name="test_registration_service_rejects_short_password_without_creating_user" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationWorkflowTest.php" line="38" class="Tests\Feature\RegistrationWorkflowTest" classname="Tests.Feature.RegistrationWorkflowTest" assertions="1" time="0.099504">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RegistrationWorkflowTest::test_registration_service_rejects_short_password_without_creating_user&#13;
+El servicio creó una cuenta con una contraseña de siete caracteres.
+&#13;
+C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationWorkflowTest.php:42</failure>
+        </testcase>
+        <testcase name="test_registration_service_rejects_invalid_name_and_email" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationWorkflowTest.php" line="49" class="Tests\Feature\RegistrationWorkflowTest" classname="Tests.Feature.RegistrationWorkflowTest" assertions="1" time="0.012157">
+          <failure type="PHPUnit\Framework\AssertionFailedError">Tests\Feature\RegistrationWorkflowTest::test_registration_service_rejects_invalid_name_and_email&#13;
+El servicio aceptó datos inválidos: name
+&#13;
+C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationWorkflowTest.php:54</failure>
+        </testcase>
+        <testcase name="test_existing_noncanonical_email_cannot_be_registered_again" file="C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationWorkflowTest.php" line="62" class="Tests\Feature\RegistrationWorkflowTest" classname="Tests.Feature.RegistrationWorkflowTest" assertions="2" time="0.028499">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\RegistrationWorkflowTest::test_existing_noncanonical_email_cannot_be_registered_again&#13;
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'http://localhost/register'
++'http://localhost/login'
+&#13;
+C:\Univalle\SQA\StockFácil\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:46
+C:\Univalle\SQA\StockFácil\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:440
+C:\Univalle\SQA\StockFácil\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:214
+C:\Univalle\SQA\StockFácil\tests\Feature\RegistrationWorkflowTest.php:68</failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
