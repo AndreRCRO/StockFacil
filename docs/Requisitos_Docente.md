@@ -8,14 +8,14 @@ Fuente principal: Plan SQA_web.pdf, cinco páginas, proporcionado por Andre. Se 
 | RD-02 | Revisar plan anterior y adaptar estrategia continua, página 2 | Test Plan 1.3 | Se contrastaron informes previos; no se encontró Test Plan autónomo anterior |
 | RD-03 | Usar dos entre TestLink, Squash, Selenium y Cypress, página 2 | tests/Browser y cypress/e2e | Selenium y Cypress ejecutados |
 | RD-04 | Aplicar TDD, BDD o ATDD, página 2; repositorio con BDD o unitarias, página 3 | tests/Browser/inventario.feature y tests/Unit | Tres escenarios BDD vinculados; unidad ejecutada; no se atribuye TDD nuevo |
-| RD-05 | Integración continua y priorización por valor, página 2 | .github/workflows/pruebas.yml y Test Plan 3 | Workflow preparado; resultado remoto requiere comprobación |
+| RD-05 | Integración continua y priorización por valor, página 2 | .github/workflows/pruebas.yml y Test Plan 3 | Ejecución 40573040837 aprobada y artifact verificado |
 | RD-06 | Introducción y alcance, página 3 | Test Plan 1 y 2 | Documentados sobre el producto real |
 | RD-07 | Estrategia con unidad, integración, aceptación, regresión, exploración y herramientas, página 3 | Test Plan 3 y Casos_de_Prueba.md | Automatización ejecutada; exploración humana pendiente |
 | RD-08 | Roles y ciclo de vida de pruebas, página 3 | Test Plan 4 y 5 | Reparto propuesto, sin simular colaboración humana |
 | RD-09 | Definition of Ready y Definition of Done, página 3 | Test Plan 6 y Kanban_Guia.md | Políticas explícitas, WIP 2 |
 | RD-10 | Métricas y control de calidad, página 3 | Test Plan 7 y Resultados_Pruebas.md | Indicadores calculados con XML y JSON |
 | RD-11 | Riesgos y mitigación, página 3 | Test Plan 8 | Técnicos, entrega, acceso y validación |
-| RD-12 | Repositorio del proyecto con pruebas, página 3 | https://github.com/AndreRCRO/StockFacil | main publicado y rama SQA preparada para push y revisión |
+| RD-12 | Repositorio del proyecto con pruebas, página 3 | https://github.com/AndreRCRO/StockFacil | main y test/sqa-kanban publicados; revisión pendiente |
 | RD-13 | Informe breve de auditoría, página 3 | Auditoria_Interna_SQA.md | Revisión técnica con límites y seguimiento |
 | RD-14 | Integrar plan con tablero ágil, página 3 | Kanban_Tareas.csv, Kanban_Guia.md y GitHub_Entrega.md | Trazabilidad local preparada; Projects remoto pendiente |
 | RD-15 | Resultados, indicadores y mejoras, página 3 | Resultados_Pruebas.md y docs/evidencias | Resultados reales; fallos de prueba conservados |

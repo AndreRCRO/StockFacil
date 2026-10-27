@@ -23,7 +23,7 @@ La comprobación automática se conserva en docs/evidencias/auditoria-verificaci
 | NC-03 | No hay evidencia de tablero Projects e Issues remotos creados | Publicar CSV y guía exacta; equipo crea y enlaza el tablero real | Pendiente de publicación y comprobación |
 | NC-04 | No hay revisión cruzada humana ni participación de Santiago acreditada en GitHub | Cada integrante revisa y registra desde su cuenta; no asignar autorías ficticias | Pendiente humano |
 | NC-05 | MAN-01 no tiene ejecución y aceptación humana | Santiago ejecuta el recorrido y Andre revisa evidencia | No ejecutado |
-| OBS-01 | Workflow preparado; el resultado local no demuestra ejecución remota | Comprobar Actions, guardar URL y descargar artifact | Pendiente de comprobación remota |
+| OBS-01 | Se verificó CI real del commit cf285bf con los pasos y artifact | Ejecución 40573040837 aprobada; JSON de API pública conservados | Verificado remoto |
 
 Los dos hallazgos AUT son defectos de automatización. No se detectó un defecto nuevo confirmado de lógica de aplicación en esta ejecución. Los hallazgos históricos permanecen en su documentación y no se cuentan como nuevos o corregidos nuevamente.
 
@@ -31,10 +31,10 @@ Los dos hallazgos AUT son defectos de automatización. No se detectó un defecto
 
 Se comprobaron 64 pruebas PHPUnit con 423 aserciones, dos comprobaciones Selenium y tres escenarios Cypress finales aprobados. Los ocho casos críticos tienen referencia al código y a la evidencia. Las tres rondas Cypress permiten reproducir el paso de fallo a corrección. El plan tiene nueve actividades de prueba contando MAN-01; ocho ejecutadas y una no ejecutada. La aprobación de ejecutados es 100%; la ejecución global es 88,89%.
 
-Las huellas de .env y de la base habitual se comparan en auditoria-verificacion.json y deben ser iguales para cerrar el control de preservación. Se verifican exclusiones de .env, SQLite y temporales; el resultado del escaneo de patrones y el número de archivos se obtienen de ese JSON. Los commits utilizan AndreRCRO y fechas reales; no prueban actividad humana del segundo integrante ni auditoría independiente.
+Las huellas de .env y de la base habitual son iguales antes y después, según auditoria-verificacion.json. Se verificaron exclusiones de .env, SQLite y temporales; el escaneo no detectó los patrones de secretos buscados. El número de archivos y los límites del control se conservan en ese JSON. Los commits utilizan AndreRCRO y fechas reales; no prueban actividad humana del segundo integrante ni auditoría independiente. CI aprobó PHPUnit, Selenium con Chrome y Cypress y generó el artifact evidencias-sqa-1, según https://github.com/AndreRCRO/StockFacil/actions/runs/40573040837.
 
 ## Seguimiento y conclusión
 
 Andre coordina cierre documental y métricas; Santiago verifica pruebas y MAN-01. Ambos registran revisión cruzada y tablero. Se dispone de evidencia técnica reproducible y dos herramientas permitidas. El cierre académico completo depende de los pendientes humanos y remotos señalados. La ausencia de fallos finales no equivale a ausencia de defectos ni a aprobación del docente.
 
-Mejoras inmediatas: publicar y enlazar tablero e Issues, abrir PR con revisión real, completar MAN-01 y verificar CI. Mejora posterior: ampliar compatibilidad de navegadores y medir cobertura de código con un instrumento apropiado, manteniendo el alcance explícito.
+Mejoras inmediatas: publicar y enlazar tablero e Issues, abrir PR con revisión real y completar MAN-01. Mejora posterior: ampliar compatibilidad de navegadores y medir cobertura de código con un instrumento apropiado, manteniendo el alcance explícito.

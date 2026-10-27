@@ -89,7 +89,7 @@ Los tres escenarios de tests/Browser/inventario.feature siguen Dado Cuando Enton
 
 Se prioriza impedir accesos indebidos y pérdida de integridad del inventario. Después se comprueban unicidad, límites, mensajes y alertas. Las pruebas manuales evalúan comprensión y uso. La revisión de tablero ocurre por bloques de trabajo, sin sprints ni ceremonias de Scrum.
 
-.github/workflows/pruebas.yml se activa con push, pull_request y ejecución manual. Prepara PHP 8.3 y Node 24, instala Composer y npm desde locks, crea .env de ejemplo y clave, compila Vite, ejecuta PHPUnit, Selenium con Chrome y Cypress con Electron y conserva evidencias incluso ante fallos. No requiere secretos ni un servicio externo de base de datos. El resultado remoto debe comprobarse en Actions y enlazarse antes de declararlo aprobado.
+.github/workflows/pruebas.yml se activa con push, pull_request y ejecución manual. Prepara PHP 8.3 y Node 24, instala Composer y npm desde locks, crea .env de ejemplo y clave, compila Vite, ejecuta PHPUnit, Selenium con Chrome y Cypress con Electron y conserva evidencias incluso ante fallos. No requiere secretos ni un servicio externo de base de datos. La ejecución remota 40573040837 del commit cf285bf terminó aprobada; sus pasos y el artifact evidencias-sqa-1 se verificaron mediante la API pública. URL https://github.com/AndreRCRO/StockFacil/actions/runs/40573040837.
 
 ## 4 Roles y responsabilidades
 
@@ -169,7 +169,7 @@ La guía y CSV relacionan K-01 a K-11 con casos y evidencias. Los estados locale
 | Aviso de deprecación de Electron en Cypress 16 | Media | Medio | Versión fijada; elegir navegador instalado al actualizar |
 | Confiar en porcentajes fuera del alcance | Media | Medio | Explicitar denominadores y no declarar cobertura de código |
 
-Las mejoras inmediatas son completar la exploración y revisión cruzada, enlazar el tablero y guardar la URL de CI. Como mejora posterior se recomienda ampliar compatibilidad y cobertura instrumental cuando exista tiempo; no se añaden funcionalidades ajenas a la entrega.
+Las mejoras inmediatas son completar la exploración y revisión cruzada y enlazar el tablero. CI ya dispone de una ejecución y URL verificadas. Como mejora posterior se recomienda ampliar compatibilidad y cobertura instrumental cuando exista tiempo; no se añaden funcionalidades ajenas a la entrega.
 
 ## Anexo A Matriz y escenarios de aceptación
 

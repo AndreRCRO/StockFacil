@@ -17,6 +17,11 @@ assert php is not None
 selenium = json.loads((evidence / 'selenium-resultados.json').read_text(encoding='utf-8'))
 reports = [(p, ET.parse(p).getroot()) for p in evidence.glob('cypress-*.xml')]
 final_path, cypress = max(reports, key=lambda item: item[0].stat().st_mtime)
+ci_data = json.loads((evidence / 'github-actions.json').read_text(encoding='utf-8-sig')) if (evidence / 'github-actions.json').exists() else {}
+ci_success = next((run for run in ci_data.get('workflow_runs', []) if run['conclusion'] == 'success'), None)
+ci_statement = (f"GitHub Actions aprobó la ejecución {ci_success['id']} del commit {ci_success['head_sha'][:7]}: {ci_success['html_url']}. "
+                'Los pasos PHPUnit, Selenium con Chrome y Cypress y la subida del artifact evidencias-sqa-1 se verificaron mediante la API pública. '
+                'Se conservan github-actions.json, github-actions-jobs.json y github-actions-artifacts.json.') if ci_success else 'CI preparada; falta verificar una ejecución remota.'
 assert int(php.attrib['tests']) == 64 and int(php.attrib['failures']) == 0 and int(php.attrib['errors']) == 0
 assert int(cypress.attrib['tests']) == 3 and int(cypress.attrib['failures']) == 0
 assert len(selenium['results']) == 2 and all(x['status'] == 'aprobado' for x in selenium['results'])
@@ -166,7 +171,7 @@ Son defectos del código de prueba, no fallos de la lógica del inventario. Se c
 
 Vite compiló correctamente (`build.txt`) y Composer validó el manifiesto y lock (`composer-validacion.txt`). Selenium empleó Edge en Windows; Cypress 16.2.0 empleó Electron 146 sin interfaz. El workflow utiliza Chrome para Selenium en Linux y Electron para Cypress. Electron emite aviso de deprecación; la versión bloqueada funciona en esta ejecución, y puede elegirse otro navegador con SQA_CYPRESS_BROWSER.
 
-La exploración manual y aceptación del equipo están pendientes. La configuración de CI está preparada y se publica en GitHub; hasta verificar una ejecución remota no se declara aprobada. No hay Issues, Projects ni PR remoto acreditados en esta entrega automática; existen CSV, guías y descripción listos para su creación. Los commits bajo AndreRCRO no prueban participación de Santiago.
+La exploración manual y aceptación del equipo están pendientes. {ci_statement} No hay Issues, Projects ni PR remoto acreditados en esta entrega automática; existen CSV, guías y descripción listos para su creación. Los commits bajo AndreRCRO no prueban participación de Santiago.
 
 ## Reproducción y preservación
 

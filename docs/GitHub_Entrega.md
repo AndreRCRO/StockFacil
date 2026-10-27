@@ -1,7 +1,7 @@
 # Publicación y revisión en GitHub
 
 Repositorio proporcionado por Andre: https://github.com/AndreRCRO/StockFacil.
-La carpeta no tenía Git. Se inició el 27 de octubre de 2026 con identidad configurada AndreRCRO y se publicó main. El historial previo del sistema se conserva como archivos históricos, sin atribuirles commits retrospectivos. Los cambios SQA se desarrollan en test/sqa-kanban. No se agregó ninguna cuenta o colaborador.
+La carpeta no tenía Git. Se inició el 27 de octubre de 2026 con identidad configurada AndreRCRO y se publicaron main y test/sqa-kanban. El historial previo del sistema se conserva como archivos históricos, sin atribuirles commits retrospectivos. Los cambios SQA se conservan en la rama para revisión. No se agregó ninguna cuenta o colaborador.
 
 ## Issues preparados
 
@@ -41,6 +41,8 @@ Los nombres de algunos controles dependen del idioma de GitHub. Si Projects soli
 No se declara un PR creado hasta disponer de su URL. main se conserva como base y se integra por PR cuando el equipo lo revise.
 
 ## Comprobar GitHub Actions
+
+Ejecución ya verificada: https://github.com/AndreRCRO/StockFacil/actions/runs/40573040837, commit cf285bf, conclusión success. Los pasos PHPUnit, Selenium con Chrome y Cypress aprobaron y se publicó evidencias-sqa-1. La API pública se conserva en docs/evidencias/github-actions*.json.
 
 1. Entra en **Actions** del repositorio después de subir la rama.
 2. Abre **Pruebas StockFacil** y selecciona el commit SQA más reciente.

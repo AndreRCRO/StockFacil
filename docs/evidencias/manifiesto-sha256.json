@@ -1,5 +1,5 @@
 {
-  "docs/evidencias/auditoria-verificacion.json": "43a7e70e3128edc8a22f4a156ca2eb50904cbd6d1df0ba7d9a266e012751ce4a",
+  "docs/evidencias/auditoria-verificacion.json": "3b99122780ea1c90d9f9e6b6882aa4e3a33b73e9a703056fd8eb0515a73b3d43",
   "docs/evidencias/build.txt": "8b627b16e7c3a91c9abfd4f29a411306f65c2fc4e7a15b39456a02534e63de79",
   "docs/evidencias/composer-validacion.txt": "617d39e3b4752168f63039991b7e1efaca11e54a1f5a9153d93b0d4efe91fe05",
   "docs/evidencias/consigna-docente.txt": "9c21551215e020c292938a73de164f23e51e335468cb289619fa004bf4b19905",
@@ -23,9 +23,13 @@
   "docs/evidencias/cypress-intermedia.txt": "c1c482b1a597a591f405da9ee4e0e8a1b18c07dc41073a3c44dd4a4c2001af54",
   "docs/evidencias/cypress-salida.txt": "afe718c31bd9ca13bdc0c4ae7a9670f40d7725a475043e565900ee523821e770",
   "docs/evidencias/cypress-servidor.txt": "db53a5ed10c0520d027b92dfc46de8f8f9655bd8f7334498bb5d0fe4418407cf",
+  "docs/evidencias/git-historial.txt": "ef244a921e3262bc4b76a7a23a29697faa436cbbe1e4637a27e2ac4f5317c38d",
+  "docs/evidencias/github-actions-artifacts.json": "c9c5ce3ce3ab2d9d60826f438783378a8e25eb34f1839f9bc3ebee9c957b475f",
+  "docs/evidencias/github-actions-jobs.json": "c2348c883da672cefbd145636fe82fd14ae971c9129f4d42d7d4193f6709d755",
+  "docs/evidencias/github-actions.json": "4d9b8286684e5fcae7c4b1aae6a8f2d60a92336e70856dcd2f0d4e68efb0cea7",
   "docs/evidencias/integridad-antes.json": "5fc61f0f685ae3d118ece2c1be384a498224d59d73b5c81ddd7cf5be1c9edae6",
   "docs/evidencias/integridad-despues.json": "952189d0787bb56cd298b2d3028d3ba7c11f4dd3742fa2c4f88b7654bcad64d4",
-  "docs/evidencias/metricas.json": "d5b2d9cb1587b7c115c5f145395e316d1daa660fd8bc25266c2507dcf5cfd193",
+  "docs/evidencias/metricas.json": "c77c7b6947b1e0d5539120759414e0f5664e7d5e7ce7fe454015a3900cb99046",
   "docs/evidencias/phpunit-final.txt": "b73b3844bc497303d27c44043ee312ec0712f28fd2371a12202f36e98494ff0b",
   "docs/evidencias/phpunit-final.xml": "9ec51a0142f119791e2c7135d7083eec4db74ce41d1f8d0ec74efbd98287e8f0",
   "docs/evidencias/phpunit-inicial.txt": "7c37e35ea0efb71153989166cf76a7a99e689b1444873d15ff1fdd84a3bcb2cd",
@@ -34,5 +38,6 @@
   "docs/evidencias/selenium/CP-02-acceso-rechazado.png": "2fe39b2f23219205290b6390df42d6b9ca3c2c48c5c9fb470ddda4bd52566b42",
   "docs/evidencias/selenium-resultados.json": "b28902a711379a1b6444acc9e47aecd10fdabd3a5a1b7eb9380d226ddc6bfe78",
   "docs/evidencias/selenium-salida.txt": "d8dbaf7cf236eee9612bf686a5907c948fc1d84568a55829877b88e6dcd2d829",
-  "docs/evidencias/selenium-servidor.txt": "b86220a2189e96446e5318bc3287007c9298ecb9960ee9386843f23c8f9a2118"
+  "docs/evidencias/selenium-servidor.txt": "b86220a2189e96446e5318bc3287007c9298ecb9960ee9386843f23c8f9a2118",
+  "docs/evidencias/word-verificacion.json": "310e14bbc0df566867d9290220deba193729394f3c9d14600c9ed6c60ec81bb5"
 }

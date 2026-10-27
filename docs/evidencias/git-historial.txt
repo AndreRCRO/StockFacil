@@ -1,0 +1,7 @@
+cf285bf 2026-10-27T15:52:30-04:00 AndreRCRO docs: completar plan SQA casos auditoria y evidencias reales
+1ba6f62 2026-10-27T15:52:29-04:00 AndreRCRO fix: buscar producto por SKU en catalogo paginado
+fb83286 2026-10-27T15:46:48-04:00 AndreRCRO fix: limitar selector Cypress al formulario bajo prueba
+9cb5c5b 2026-10-27T15:44:09-04:00 AndreRCRO docs: iniciar Test Plan agil y politicas Kanban
+dceb45a 2026-10-27T15:44:09-04:00 AndreRCRO test: incorporar Selenium Cypress y pruebas unitarias de stock
+124888f 2026-10-27T15:39:32-04:00 AndreRCRO chore: incluir entorno de ejemplo y directorios de Laravel
+3e67ced 2026-10-27T15:37:57-04:00 AndreRCRO chore: registrar base existente de StockFacil

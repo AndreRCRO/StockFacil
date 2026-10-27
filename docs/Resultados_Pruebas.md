@@ -46,7 +46,7 @@ Son defectos del código de prueba, no fallos de la lógica del inventario. Se c
 
 Vite compiló correctamente (`build.txt`) y Composer validó el manifiesto y lock (`composer-validacion.txt`). Selenium empleó Edge en Windows; Cypress 16.2.0 empleó Electron 146 sin interfaz. El workflow utiliza Chrome para Selenium en Linux y Electron para Cypress. Electron emite aviso de deprecación; la versión bloqueada funciona en esta ejecución, y puede elegirse otro navegador con SQA_CYPRESS_BROWSER.
 
-La exploración manual y aceptación del equipo están pendientes. La configuración de CI está preparada y se publica en GitHub; hasta verificar una ejecución remota no se declara aprobada. No hay Issues, Projects ni PR remoto acreditados en esta entrega automática; existen CSV, guías y descripción listos para su creación. Los commits bajo AndreRCRO no prueban participación de Santiago.
+La exploración manual y aceptación del equipo están pendientes. GitHub Actions aprobó la ejecución 40573040837 del commit cf285bf: https://github.com/AndreRCRO/StockFacil/actions/runs/40573040837. Los pasos PHPUnit, Selenium con Chrome y Cypress y la subida del artifact evidencias-sqa-1 se verificaron mediante la API pública. Se conservan github-actions.json, github-actions-jobs.json y github-actions-artifacts.json. No hay Issues, Projects ni PR remoto acreditados en esta entrega automática; existen CSV, guías y descripción listos para su creación. Los commits bajo AndreRCRO no prueban participación de Santiago.
 
 ## Reproducción y preservación
 

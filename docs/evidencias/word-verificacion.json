@@ -1,0 +1,10 @@
+{
+  "recorded_at_utc": "2026-10-27T19:58:00.881842+00:00",
+  "document": "docs\\Test_Plan_SQA.docx",
+  "docx_sha256": "44538deba9dda758e58563c0cd0e2b3bd94e6f3087758426d83dd977f711d3ab",
+  "pages": 16,
+  "renderer": "Microsoft Word ExportAsFixedFormat y Poppler",
+  "default_renderer_limitation": "render_docx.py no encontró LibreOffice; se utilizó Word instalado para la exportación real",
+  "all_pages_visually_reviewed": true,
+  "review_result": "Sin recortes, superposiciones ni tablas ilegibles; portada sin borde; encabezados repetidos en tablas multipágina"
+}
