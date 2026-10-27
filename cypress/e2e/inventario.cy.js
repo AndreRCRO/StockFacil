@@ -15,6 +15,7 @@ const product = (sku, stock = '10') => {
     cy.get('#initial_stock').clear().type(stock);
     cy.get('form[data-submit-form] button[type=submit]').click();
     cy.location('pathname').should('eq', '/products');
+    cy.visit(`/products?q=${sku}`);
 };
 
 describe('Aceptación de inventario StockFácil', () => {
