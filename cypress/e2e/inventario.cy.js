@@ -2,7 +2,7 @@ const login = () => {
     cy.visit('/login');
     cy.get('#email').type('sqa@example.test');
     cy.get('#password').type('SqaDemo2026!', { log: false });
-    cy.get('button[type=submit]').click();
+    cy.get('form[data-submit-form] button[type=submit]').click();
     cy.location('pathname').should('eq', '/dashboard');
 };
 const product = (sku, stock = '10') => {
@@ -13,7 +13,7 @@ const product = (sku, stock = '10') => {
     cy.get('#price').clear().type('8.50');
     cy.get('#minimum_stock').clear().type('3');
     cy.get('#initial_stock').clear().type(stock);
-    cy.get('button[type=submit]').click();
+    cy.get('form[data-submit-form] button[type=submit]').click();
     cy.location('pathname').should('eq', '/products');
 };
 
@@ -29,7 +29,7 @@ describe('Aceptación de inventario StockFácil', () => {
         cy.get('#sku').type('cy-alta');
         cy.get('#category_id').select('Bebidas');
         cy.get('#price').type('8.50');
-        cy.get('button[type=submit]').click();
+        cy.get('form[data-submit-form] button[type=submit]').click();
         cy.get('#sku-error').should('be.visible').and('contain.text', 'SKU');
         cy.screenshot('CP-04-sku-duplicado');
         cy.visit('/products?q=CY-ALTA');
@@ -45,7 +45,7 @@ describe('Aceptación de inventario StockFácil', () => {
             cy.get('input[value=salida]').check();
             cy.get('#quantity').type('11');
             cy.get('#note').type('INTENTO-RECHAZADO-CY');
-            cy.get('button[type=submit]').click();
+            cy.get('form[data-submit-form] button[type=submit]').click();
             cy.get('#quantity-error').should('contain.text', 'Stock insuficiente');
             cy.screenshot('CP-06-stock-insuficiente');
             cy.visit(`/movements?product_id=${id}`);
@@ -64,14 +64,14 @@ describe('Aceptación de inventario StockFácil', () => {
             cy.get('#product_id').select(id);
             cy.get('#quantity').type('5');
             cy.get('#note').type('ENTRADA-CY-5');
-            cy.get('button[type=submit]').click();
+            cy.get('form[data-submit-form] button[type=submit]').click();
             cy.location('pathname').should('eq', '/movements');
             cy.contains('tr', 'ENTRADA-CY-5').should('contain.text', '15');
             cy.screenshot('CP-05-entrada');
             cy.visit(`/movements/create?product_id=${id}&type=salida`);
             cy.get('#quantity').type('12');
             cy.get('#note').type('SALIDA-CY-12');
-            cy.get('button[type=submit]').click();
+            cy.get('form[data-submit-form] button[type=submit]').click();
             cy.contains('tr', 'SALIDA-CY-12').should('contain.text', '15').and('contain.text', '3');
             cy.visit('/stock-bajo');
             cy.contains('tr', 'CY-MOV').should('contain.text', 'Stock bajo');
@@ -79,3 +79,4 @@ describe('Aceptación de inventario StockFácil', () => {
         });
     });
 });
+
