@@ -1,0 +1,51 @@
+name: Pruebas StockFacil
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  calidad:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: pdo_sqlite, sqlite3, mbstring, intl, dom, xml, curl, fileinfo
+          coverage: none
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Preparar Laravel
+        run: |
+          composer install --prefer-dist --no-interaction --no-progress
+          cp .env.example .env
+          php artisan key:generate
+          mkdir -p docs/evidencias
+      - name: Instalar y compilar frontend
+        run: |
+          npm ci
+          npx cypress install
+          npm run build
+      - name: Pruebas unitarias e integración
+        run: php vendor/phpunit/phpunit/phpunit --colors=never --log-junit docs/evidencias/phpunit-ci.xml
+      - name: Selenium con Chrome
+        run: npm run test:selenium
+        env:
+          SQA_BROWSER: chrome
+      - name: Cypress con Electron
+        run: npm run test:cypress
+      - name: Guardar evidencias incluso si falla una prueba
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidencias-sqa-${{ github.run_number }}
+          path: docs/evidencias/
+          retention-days: 14
