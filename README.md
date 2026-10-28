@@ -2,6 +2,24 @@
 
 Sistema web local para administrar el inventario de pequeños negocios. Registra productos, entradas y salidas; muestra existencias, alertas y un historial con responsable y saldos anteriores/posteriores.
 
+## Entrega SQA con Kanban del 27 de octubre de 2026
+
+El [Test Plan actualizado](docs/Test_Plan_SQA.md) integra ocho apartados, Selenium, Cypress y la regresión PHPUnit. Consulta [casos](docs/Casos_de_Prueba.md), [resultados verificables](docs/Resultados_Pruebas.md), [auditoría](docs/Auditoria_Interna_SQA.md), [reglas Kanban](docs/Kanban_Guia.md) y [publicación en GitHub](docs/GitHub_Entrega.md). La versión Word es `docs/Test_Plan_SQA.docx`. Los informes anteriores conservan su alcance y fechas históricos.
+
+Después de instalar dependencias, compila y ejecuta desde la raíz:
+
+```powershell
+npm run build
+php vendor/phpunit/phpunit/phpunit --colors=never
+npx cypress install
+npm run test:selenium
+npm run test:cypress
+```
+
+Las dos pruebas de navegador preparan automáticamente una base SQLite nueva y datos de prueba, arrancan un servidor PHP en puerto libre y lo detienen al finalizar. Requieren Internet la primera vez para el ejecutable de Cypress y el driver de Selenium; usan Edge en Windows o Chrome en Linux. Las evidencias se guardan en `docs/evidencias/`. Para elegir otro navegador, define `SQA_BROWSER` para Selenium o `SQA_CYPRESS_BROWSER` para Cypress antes de ejecutar. No apuntes estos scripts a tu inventario habitual.
+
+El workflow `.github/workflows/pruebas.yml` ejecuta las tres herramientas en push y pull_request. La exploración manual, aceptación y revisión del compañero se registran por separado; no se deducen de una prueba automatizada aprobada.
+
 ## Tecnologías y requisitos
 
 - PHP 8.3 o superior con las extensiones de Laravel, especialmente `pdo_sqlite`, `sqlite3`, `mbstring`, `intl`, `openssl`, `fileinfo`, `curl`, `dom` y `xml`.

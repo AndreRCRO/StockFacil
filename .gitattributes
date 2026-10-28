@@ -6,6 +6,9 @@
 *.md diff=markdown
 *.php diff=php
 
+# Preservar resultados originales, incluidos CRLF y espacios de las herramientas.
+/docs/evidencias/** -text -whitespace
+
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="20.071" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-10-27T19:47:04" tests="0" file="cypress\e2e\inventario.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Aceptación de inventario StockFácil" timestamp="2026-10-27T19:47:04" tests="3" time="20.069" failures="0">
+    <testcase name="Aceptación de inventario StockFácil CP-03 y CP-04 crea producto con stock y rechaza SKU duplicado" time="6.439" classname="CP-03 y CP-04 crea producto con stock y rechaza SKU duplicado">
+    </testcase>
+    <testcase name="Aceptación de inventario StockFácil CP-06 rechaza salida superior al saldo y conserva stock e historial" time="6.159" classname="CP-06 rechaza salida superior al saldo y conserva stock e historial">
+    </testcase>
+    <testcase name="Aceptación de inventario StockFácil CP-05 registra entrada y CP-07 salida al mínimo con alerta e historial" time="7.438" classname="CP-05 registra entrada y CP-07 salida al mínimo con alerta e historial">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,11 @@
+{
+  "recorded_at_utc": "2026-10-27T20:22:06.598597+00:00",
+  "document": "docs/Test_Plan_SQA.docx",
+  "docx_sha256": "cd66197221f92975fd8f986bfbefc843e06120260d385666427deb75d3650acb",
+  "pages": 15,
+  "renderer": "Microsoft Word ExportAsFixedFormat y Poppler",
+  "all_pages_visually_reviewed": true,
+  "review_result": "Quince páginas con formato sencillo y contenido ampliado; ocho apartados, ocho casos desarrollados, organización Kanban, métricas, correcciones y riesgos. Sin anexos ni figuras numeradas.",
+  "embedded_screenshots": 3,
+  "embedded_images_match_original_png_bytes": true
+}

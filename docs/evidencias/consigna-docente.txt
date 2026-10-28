@@ -1,0 +1,113 @@
+PAGINA 1
+ 
+ 
+Actividad grupal: “Actualización del Test Plan en un entorno ágil” 
+ 
+Propósito de la actividad 
+Demostrar la integración de la calidad de software en todo el proceso de 
+desarrollo ágil mediante la actualización y aplicación de un Test Plan, 
+adaptado a los principios de SQA y metodologías ágiles (Scrum , XP o 
+Kanban), evidenciando prácticas de control, aseguramiento y mejora 
+continua para un proyecto web. 
+ 
+Contexto 
+ 
+Cada grupo trabajará sobre un proyecto web. 
+A partir de los entregables previos —requerimientos, historias de usuario, 
+casos de uso, pruebas unitarias, revisiones y auditorías simuladas — los 
+equipos deberán actualizar su Test Plan para reflejar cómo la calidad se 
+gestiona de forma iterativa e incremental en un entorno ágil. 
+ 
+Competencias y resultados esperados 
+ 
+Al finalizar la actividad, los estudiantes serán capaces de: 
+Integrar el aseguramiento de la calidad del software (SQA) dentro de un 
+proceso de desarrollo ágil para entorno web. 
+Diseñar un Test Plan actualizado alineado con los valores y principios ágiles. 
+Implementar métricas de calidad, tipos de pruebas y roles dentro del equipo. 
+Aplicar estrategias de control y seguimiento (inspecciones, auditorías, 
+revisiones). 
+Comunicar resultados y retroalimentar el proceso de mejora continua. 
+ 
+
+PAGINA 2
+ 
+ 
+Instrucciones de la actividad 
+Fase 1. Análisis del entorno ágil (Sprint actual o final) 
+Describir el marco ágil utilizado (Scrum, Kanban, XP, etc.). 
+Identificar roles relevantes para la calidad (Product Owner, QA, Dev 
+Team). 
+Determinar los artefactos del sprint a someter a pruebas. 
+ 
+Fase 2. Revisión del Test Plan original 
+Revisar el plan de pruebas inicial (documento tradicional IEEE 829 o 
+ISTQB). 
+Evaluar qué partes deben actualizarse para adaptarse a un ciclo ágil: 
+ 
+Estrategia de pruebas continua 
+Automatización (utilizar 2 herramientas: Test link, Squash, Selenium, 
+Cypress)  
+TDD, BDD o ATDD 
+Integración continua (CI/CD) 
+Priorización de pruebas según valor del producto 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PAGINA 3
+ 
+ 
+Fase 3. Actualización del Test Plan 
+El documento actualizado debe incluir al menos los siguientes apartados: 
+ 
+ 
+Evidencias requeridas 
+ 
+Documento del Test Plan actualizado (versión ágil). 
+Repositorio del proyecto (GitHub/GitLab) con pruebas implementadas (TDD, 
+BDD o unitarias). 
+Informe breve de auditoría interna de calidad, con observaciones y acciones 
+correctivas. 
+Integración del plan de pruebas con el tablero ágil (Jira, Trello, etc.) 
+Resultados de pruebas automatizadas o manuales de acuerdo a las 
+herramientas utilizadas. 
+Indicadores de calidad y mejoras propuestas 
+
+
+PAGINA 4
+ 
+ 
+ 
+Dinámica grupal sugerida 
+ 
+Consejo didáctico: los equipos deben evidenciar la colaboración continua 
+entre desarrollo y QA, mostrando cómo la calidad se convierte en una 
+responsabilidad compartida. 
+ 
+Criterios de evaluación 
+ 
+ 
+ 
+ 
+
+
+PAGINA 5
+ 
+ 
+Bibliografía sugerida 
+ 
+Pressman, R. S., & Maxim, B. R. (2020). Ingeniería del Software: Un Enfoque 
+Práctico. McGraw-Hill. 
+Sommerville, I. (2020). Ingeniería de Software (10ª ed.). Pearson. 
+ISTQB Foundation Level Syllabus (v4.0, 2023). 
+Crispin, L. & Gregory, J. (2014). Agile Testing: A Practical Guide for Testers 
+and Agile Teams. Addison-Wesley. 
+Fowler, M. (2019). Continuous Integration and Delivery. ThoughtWorks. 
+ 
+ 

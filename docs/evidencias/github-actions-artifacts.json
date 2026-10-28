@@ -1,0 +1,25 @@
+{
+  "total_count": 1,
+  "artifacts": [
+    {
+      "id": 12766220875,
+      "node_id": "MDg6QXJ0aWZhY3QxMjc2NjIyMDg3NQ==",
+      "name": "evidencias-sqa-1",
+      "size_in_bytes": 1632955,
+      "url": "https://api.github.com/repos/AndreRCRO/StockFacil/actions/artifacts/12766220875",
+      "archive_download_url": "https://api.github.com/repos/AndreRCRO/StockFacil/actions/artifacts/12766220875/zip",
+      "expired": false,
+      "digest": "sha256:870387ca489ebaca0a89fd46cab612957629e54971149ba12334c129fdc698ca",
+      "created_at": "2026-10-27T19:53:51Z",
+      "updated_at": "2026-10-27T19:53:51Z",
+      "expires_at": "2026-11-10T19:53:50Z",
+      "workflow_run": {
+        "id": 40573040837,
+        "repository_id": 1436192953,
+        "head_repository_id": 1436192953,
+        "head_branch": "test/sqa-kanban",
+        "head_sha": "cf285bf82954d11bf130e5838773d81c74d6f250"
+      }
+    }
+  ]
+}

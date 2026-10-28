@@ -1,0 +1,137 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 122432040268,
+      "run_id": 40573040837,
+      "workflow_name": "Pruebas StockFacil",
+      "head_branch": "test/sqa-kanban",
+      "run_url": "https://api.github.com/repos/AndreRCRO/StockFacil/actions/runs/40573040837",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVZqQuc8AAAAcgYStTA",
+      "head_sha": "cf285bf82954d11bf130e5838773d81c74d6f250",
+      "url": "https://api.github.com/repos/AndreRCRO/StockFacil/actions/jobs/122432040268",
+      "html_url": "https://github.com/AndreRCRO/StockFacil/actions/runs/40573040837/job/122432040268",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-27T19:52:48Z",
+      "started_at": "2026-10-27T19:52:51Z",
+      "completed_at": "2026-10-27T19:53:54Z",
+      "name": "calidad",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-27T19:52:52Z",
+          "completed_at": "2026-10-27T19:52:53Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-27T19:52:53Z",
+          "completed_at": "2026-10-27T19:52:55Z"
+        },
+        {
+          "name": "Run shivammathur/setup-php@v2",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-27T19:52:55Z",
+          "completed_at": "2026-10-27T19:52:58Z"
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-27T19:52:58Z",
+          "completed_at": "2026-10-27T19:52:59Z"
+        },
+        {
+          "name": "Preparar Laravel",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-27T19:52:59Z",
+          "completed_at": "2026-10-27T19:53:04Z"
+        },
+        {
+          "name": "Instalar y compilar frontend",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-27T19:53:04Z",
+          "completed_at": "2026-10-27T19:53:17Z"
+        },
+        {
+          "name": "Pruebas unitarias e integración",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-27T19:53:17Z",
+          "completed_at": "2026-10-27T19:53:21Z"
+        },
+        {
+          "name": "Selenium con Chrome",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8,
+          "started_at": "2026-10-27T19:53:21Z",
+          "completed_at": "2026-10-27T19:53:25Z"
+        },
+        {
+          "name": "Cypress con Electron",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-27T19:53:25Z",
+          "completed_at": "2026-10-27T19:53:49Z"
+        },
+        {
+          "name": "Guardar evidencias incluso si falla una prueba",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-27T19:53:49Z",
+          "completed_at": "2026-10-27T19:53:51Z"
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19,
+          "started_at": "2026-10-27T19:53:51Z",
+          "completed_at": "2026-10-27T19:53:53Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-27T19:53:53Z",
+          "completed_at": "2026-10-27T19:53:53Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-10-27T19:53:53Z",
+          "completed_at": "2026-10-27T19:53:53Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/AndreRCRO/StockFacil/check-runs/122432040268",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000375,
+      "runner_name": "GitHub Actions 1000000375",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

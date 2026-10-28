@@ -1,0 +1,21 @@
+{
+  "tool": "Selenium WebDriver",
+  "browser": "MicrosoftEdge",
+  "automated": true,
+  "results": [
+    {
+      "id": "CP-02",
+      "status": "aprobado",
+      "obtained": "Ruta privada redirige a login y las credenciales inválidas muestran error sin abrir sesión.",
+      "started": "2026-10-27T19:41:46.145Z",
+      "finished": "2026-10-27T19:41:49.078Z"
+    },
+    {
+      "id": "CP-01",
+      "status": "aprobado",
+      "obtained": "Login válido abre el dashboard; logout impide volver al catálogo sin autenticarse.",
+      "started": "2026-10-27T19:41:49.079Z",
+      "finished": "2026-10-27T19:41:51.656Z"
+    }
+  ]
+}

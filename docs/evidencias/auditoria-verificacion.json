@@ -1,0 +1,13 @@
+{
+  "recorded_at_utc": "2026-10-27T20:22:07.224803+00:00",
+  "env_unchanged": true,
+  "database_unchanged": true,
+  "sensitive_paths_ignored": {
+    ".env": true,
+    "database/database.sqlite": true,
+    "tmp/sqa-e2e/prueba.sqlite": true
+  },
+  "text_files_scanned": 299,
+  "secret_pattern_findings": [],
+  "limitation": "Búsqueda de patrones conocidos; no demuestra ausencia absoluta de secretos ni auditoría de seguridad exhaustiva."
+}
